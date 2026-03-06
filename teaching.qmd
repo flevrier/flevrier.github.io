@@ -1,0 +1,23 @@
+---
+title: "Teaching"
+---
+
+## L3 Astrophysics
+
+Topics:
+
+- stellar structure
+- radiative processes
+- interstellar medium
+
+[Course notes](files/astrophysics_course.pdf)
+
+---
+
+## M2 Interstellar Medium
+
+Topics:
+
+- molecular spectroscopy
+- astrochemistry
+- molecular clouds

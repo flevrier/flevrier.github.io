@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "François Levrier"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+      - href: teaching.qmd
+        text: Teaching
+      - href: students.qmd
+        text: Students
+      - href: software.qmd
+        text: Software
+      - href: cv.qmd
+        text: CV
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
