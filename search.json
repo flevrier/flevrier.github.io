@@ -7,67 +7,11 @@
     "text": "Download full CV:\nPDF version"
   },
   {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "A full list of publications is available on:\n\nGoogle Scholar\nADS\n\nSelected publications:\n\nLevrier et al. (2012) …\nLevrier et al. (2018) …"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
-    "section": "",
-    "text": "Professor of Astrophysics\nLaboratoire de Radioastronomie\nÉcole Normale Supérieure, Paris\n\n\n\nInterstellar medium\nMolecular clouds\nRadiative transfer\nAstrochemical processes\n\n\n\n\nLaboratoire de Radioastronomie\nENS Paris\nEmail: francois.levrier@ens.fr— title: “Website” —\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
-  },
-  {
-    "objectID": "index.html#françois-levrier",
-    "href": "index.html#françois-levrier",
-    "title": "Home",
-    "section": "",
-    "text": "Professor of Astrophysics\nLaboratoire de Radioastronomie\nÉcole Normale Supérieure, Paris\n\n\n\nInterstellar medium\nMolecular clouds\nRadiative transfer\nAstrochemical processes\n\n\n\n\nLaboratoire de Radioastronomie\nENS Paris\nEmail: francois.levrier@ens.fr— title: “Website” —\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
-  },
-  {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "Topics:\n\nstellar structure\nradiative processes\ninterstellar medium\n\nCourse notes"
-  },
-  {
-    "objectID": "teaching.html#l3-astrophysics",
-    "href": "teaching.html#l3-astrophysics",
-    "title": "Teaching",
-    "section": "",
-    "text": "Topics:\n\nstellar structure\nradiative processes\ninterstellar medium\n\nCourse notes"
-  },
-  {
-    "objectID": "teaching.html#m2-interstellar-medium",
-    "href": "teaching.html#m2-interstellar-medium",
-    "title": "Teaching",
-    "section": "M2 Interstellar Medium",
-    "text": "M2 Interstellar Medium\nTopics:\n\nmolecular spectroscopy\nastrochemistry\nmolecular clouds"
-  },
-  {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
-    "section": "",
-    "text": "My research focuses on the physics and chemistry of the interstellar medium.\nTopics include\n\nmolecular clouds\nturbulence\nchemical modelling\nradiative transfer"
-  },
-  {
-    "objectID": "research.html#interstellar-medium",
-    "href": "research.html#interstellar-medium",
-    "title": "Research",
-    "section": "",
-    "text": "My research focuses on the physics and chemistry of the interstellar medium.\nTopics include\n\nmolecular clouds\nturbulence\nchemical modelling\nradiative transfer"
-  },
-  {
-    "objectID": "research.html#current-projects",
-    "href": "research.html#current-projects",
-    "title": "Research",
-    "section": "Current projects",
-    "text": "Current projects\nDescription of current research programs."
+    "text": "About this site"
   },
   {
     "objectID": "students.html",
@@ -91,10 +35,73 @@
     "text": "Master Students\n\nName – project – year"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
     "section": "",
-    "text": "About this site"
+    "text": "My research focuses on the physics and chemistry of the interstellar medium.\nTopics include\n\nmolecular clouds\nturbulence\nchemical modelling\nradiative transfer"
+  },
+  {
+    "objectID": "research.html#interstellar-medium",
+    "href": "research.html#interstellar-medium",
+    "title": "Research",
+    "section": "",
+    "text": "My research focuses on the physics and chemistry of the interstellar medium.\nTopics include\n\nmolecular clouds\nturbulence\nchemical modelling\nradiative transfer"
+  },
+  {
+    "objectID": "research.html#current-projects",
+    "href": "research.html#current-projects",
+    "title": "Research",
+    "section": "Current projects",
+    "text": "Current projects\nDescription of current research programs."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Topics:\n\nstellar structure\nradiative processes\ninterstellar medium\n\nCourse notes"
+  },
+  {
+    "objectID": "teaching.html#l3-astrophysics",
+    "href": "teaching.html#l3-astrophysics",
+    "title": "Teaching",
+    "section": "",
+    "text": "Topics:\n\nstellar structure\nradiative processes\ninterstellar medium\n\nCourse notes"
+  },
+  {
+    "objectID": "teaching.html#m2-interstellar-medium",
+    "href": "teaching.html#m2-interstellar-medium",
+    "title": "Teaching",
+    "section": "M2 Interstellar Medium",
+    "text": "M2 Interstellar Medium\nTopics:\n\nmolecular spectroscopy\nastrochemistry\nmolecular clouds"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Professor of Astrophysics\nLaboratoire de Radioastronomie\nÉcole Normale Supérieure, Paris\n\n\n\nInterstellar medium\nMolecular clouds\nRadiative transfer\nAstrochemical processes\n\n\n\n\nLaboratoire de Radioastronomie\nENS Paris\nEmail: francois.levrier@ens.fr— title: “Website” —\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "index.html#françois-levrier",
+    "href": "index.html#françois-levrier",
+    "title": "Home",
+    "section": "",
+    "text": "Professor of Astrophysics\nLaboratoire de Radioastronomie\nÉcole Normale Supérieure, Paris\n\n\n\nInterstellar medium\nMolecular clouds\nRadiative transfer\nAstrochemical processes\n\n\n\n\nLaboratoire de Radioastronomie\nENS Paris\nEmail: francois.levrier@ens.fr— title: “Website” —\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "A full list of publications is available on:\n\nGoogle Scholar\nADS\n\nSelected publications:\n\nLevrier et al. (2012) …\nLevrier et al. (2018) …"
+  },
+  {
+    "objectID": "software.html#polar-tools",
+    "href": "software.html#polar-tools",
+    "title": "Software",
+    "section": "Polar Tools",
+    "text": "Polar Tools"
   }
 ]
