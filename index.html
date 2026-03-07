@@ -242,21 +242,18 @@ Laboratoire de Physique de l’ENS (LPENS)<br>
 
 </div>
 <script>
-
 fetch("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
-.then(response => response.json())
-.then(data => {
+.then(r => r.json())
+.then(d => {
 
-let html = `
-<h3>${data.title}</h3>
-<img src="${data.url}" style="max-width:600px;">
-<p>${data.explanation}</p>
+document.getElementById("apod").innerHTML = `
+<h3>${d.title}</h3>
+<img src="${d.url}" style="max-width:650px">
+<p style="font-size:0.9em">${d.explanation}</p>
+<p><a href="${d.hdurl}">High-resolution version</a></p>
 `;
 
-document.getElementById("apod").innerHTML = html;
-
 });
-
 </script>
 </section>
 </section>
