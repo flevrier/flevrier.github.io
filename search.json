@@ -1,38 +1,10 @@
 [
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "Curriculum Vitae",
-    "section": "",
-    "text": "Download full CV:\nPDF version"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "About this site"
-  },
-  {
-    "objectID": "students.html",
-    "href": "students.html",
-    "title": "Students",
-    "section": "",
-    "text": "Name – thesis topic – year"
-  },
-  {
-    "objectID": "students.html#phd-students",
-    "href": "students.html#phd-students",
-    "title": "Students",
-    "section": "",
-    "text": "Name – thesis topic – year"
-  },
-  {
-    "objectID": "students.html#master-students",
-    "href": "students.html#master-students",
-    "title": "Students",
-    "section": "Master Students",
-    "text": "Master Students\n\nName – project – year"
   },
   {
     "objectID": "research.html",
@@ -56,6 +28,27 @@
     "text": "Current projects\nDescription of current research programs."
   },
   {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "A full list of publications is available on:\n\nGoogle Scholar\nADS\n\nSelected publications:\n\nLevrier et al. (2012) …\nLevrier et al. (2018) …"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Professor of Astrophysics\nLaboratoire de Radioastronomie\nÉcole Normale Supérieure, Paris\n\n\n\nInterstellar medium\nMolecular clouds\nRadiative transfer\nAstrochemical processes\n\n\n\n\nLaboratoire de Radioastronomie\nENS Paris\nEmail: francois.levrier@ens.fr— title: “Website” —\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "index.html#françois-levrier",
+    "href": "index.html#françois-levrier",
+    "title": "Home",
+    "section": "",
+    "text": "Professor of Astrophysics\nLaboratoire de Radioastronomie\nÉcole Normale Supérieure, Paris\n\n\n\nInterstellar medium\nMolecular clouds\nRadiative transfer\nAstrochemical processes\n\n\n\n\nLaboratoire de Radioastronomie\nENS Paris\nEmail: francois.levrier@ens.fr— title: “Website” —\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
     "objectID": "teaching.html",
     "href": "teaching.html",
     "title": "Teaching",
@@ -77,38 +70,31 @@
     "text": "M2 Interstellar Medium\nTopics:\n\nmolecular spectroscopy\nastrochemistry\nmolecular clouds"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "François Levrier",
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
     "section": "",
-    "text": "Professeur\n\nÉquipe d’astrophysique\n\nLPENS - ENS - PSL\nOffice HL102A  +33 1 44 32 39 93  francois.levrier@ens.fr\nGoogle Scholar\nNASA ADS\n\n\n🐦 Twitter\n🦋 Bluesky\n\n\nLoading latest Bluesky post…\n\n\n\n\n\nI work on the physics and chemistry of the interstellar medium, including:\n\nmolecular clouds\nastrochemistry\nradiative transfer\nturbulence\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInterstellar Medium course\nRadiative Processes"
+    "text": "Download full CV:\nPDF version"
   },
   {
-    "objectID": "index.html#short-bio",
-    "href": "index.html#short-bio",
-    "title": "François Levrier",
+    "objectID": "students.html",
+    "href": "students.html",
+    "title": "Students",
     "section": "",
-    "text": "I work on the physics and chemistry of the interstellar medium, including:\n\nmolecular clouds\nastrochemistry\nradiative transfer\nturbulence"
+    "text": "Name – thesis topic – year"
   },
   {
-    "objectID": "index.html#lecture-notes",
-    "href": "index.html#lecture-notes",
-    "title": "François Levrier",
+    "objectID": "students.html#phd-students",
+    "href": "students.html#phd-students",
+    "title": "Students",
     "section": "",
-    "text": "Interstellar Medium course\nRadiative Processes"
+    "text": "Name – thesis topic – year"
   },
   {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Publications\n\nBanday AJ, Gimeno-Amo C, Diego-Palazuelos P, de la Hoz E, Gruppuso A, et al. 2026. 2026(1):036\n\n\nRaffuzzi N, Carones A, Monelli M, Giardiello S, Pagano L, et al. 2026. arXiv e-prints. arXiv:2602.02410\n\n\nVigoureux G, Flagey N, Boulanger F, Noriega-Crespo A, Guillet V, et al. 2026. arXiv e-prints. arXiv:2602.03672\n\n\nAurvik R, Galloway M, Gjerløw E, Fuskeland U, Basyrov A, et al. 2025. 2025(11):041\n\n\nBešlić I, Gerin M, Guzmán VV, Bron E, Roueff E, et al. 2025. 702:A205\n\n\nBonaldi A, Hartley P, Braun R, Purser S, Acharya A, et al. 2025. 543(2):1092–1119\n\n\nBortolami M, Raffuzzi N, Pagano L, Puglisi G, Anand A, et al. 2025. 2025(11):042\n\n\nCarralot F, Carones A, Krachmalnicoff N, Ghigna T, Novelli A, et al. 2025. 2025(1):019\n\n\nde la Hoz E, Diego-Palazuelos P, Errard J, Gruppuso A, Jost B, et al. 2025. 2025(7):083\n\n\nGiardiello S, Carones A, Ghigna T, Pagano L, Piacentini F, et al. 2025. 2025(10):038\n\n\nPalud P, Bron E, Chainais P, Le Petit F, Thouvenin P-A, et al. 2025. 698:A311\n\n\nRichard P, Allys E, Levrier F, Gusdorf A, Auclair C. 2025. 696:A217\n\n\nRuiz-Granda M, Diego-Palazuelos P, Gimeno-Amo C, Vielva P, Lonappan AI, et al. 2025. 2025(11):073\n\n\nTomasi M, Pagano L, Anand A, Baccigalupi C, Banday AJ, et al. 2025. 2025(11):040\n\n\nZakardjian A, Hughes A, Pety J, Gerin M, Bešlic’ I, et al. 2025a. 696:A165\n\n\nZakardjian A, Hughes A, Pety J, Gerin M, Palud P, et al. 2025b. 703:A176\n\n\nBeslic I, Coude S, Lis DC, Gerin M, Goldsmith PF, et al. 2024. VizieR Online Data Catalog: Magnetic field in the Flame nebula (Beslic+, 2024)\n\n\nBešlić I, Coudé S, Lis DC, Gerin M, Goldsmith PF, et al. 2024. 684:A212\n\n\nEinig L, Palud P, Roueff A, Pety J, Bron E, et al. 2024. 691:A109\n\n\nGhigna T, Adler A, Aizawa K, Akamatsu H, Akizawa R, et al. 2024a. The LiteBIRD mission to explore cosmic inflation\n\n\nGhigna T, Adler A, Aizawa K, Akamatsu H, Akizawa R, et al. 2024b. arXiv e-prints. arXiv:2406.02724\n\n\nLeloup C, Patanchon G, Errard J, Franceschet C, Gudmundsson JE, et al. 2024. 2024(6):011\n\n\nPaoletti D, Rubino-Martin JA, Shiraishi M, Molinari D, Chluba J, et al. 2024. 2024(7):086\n\n\nRemazeilles M, Douspis M, Rubiño-Martı́n JA, Banday AJ, Chluba J, et al. 2024. 2024(12):026\n\n\nRoueff A, Pety J, Gerin M, Ségal LE, Goicoechea JR, et al. 2024. 686:A255\n\n\nSégal L, Roueff A, Pety J, Gerin M, Roueff E, et al. 2024. 692:A160\n\n\nTakase Y, Vacher L, Ishino H, Patanchon G, Montier L, et al. 2024. 2024(12):036\n\n\nEinig L, Pety J, Roueff A, Vandame P, Chanussot J, et al. 2023. 677:A158\n\n\nFuskeland U, Aumont J, Aurlien R, Baccigalupi C, Banday AJ, et al. 2023. 676:A42\n\n\nGaudel M, Orkisz JH, Gerin M, Pety J, Roueff A, et al. 2023. 670:A59\n\n\nLiteBIRD Collaboration, Allys E, Arnold K, Aumont J, Aurlien R, et al. 2023. Progress of Theoretical and Experimental Physics. 2023(4):042F01\n\n\nPalud P, Einig L, Le Petit F, Bron É, Chainais P, et al. 2023. 678:A198\n\n\nRégaldo-Saint Blancard B, Allys E, Auclair C, Boulanger F, Eickenberg M, et al. 2023. 943(1):9\n\n\nSanta-Maria MG, Goicoechea JR, Pety J, Gerin M, Orkisz JH, et al. 2023. 679:A4\n\n\nBron E, Roueff E, Gerin M, Pety J, Gratier P, et al. 2022. Learning from model grids: Tracers of the ionization fraction in the ISM\n\n\nHubmayr J, Ade PAR, Adler A, Allys E, Alonso D, et al. 2022. Journal of Low Temperature Physics. 209(3-4):396–408\n\n\nJeffrey N, Boulanger F, Wandelt BD, Regaldo-Saint Blancard B, Allys E, Levrier F. 2022. 510(1):L1–6\n\n\nKrachmalnicoff N, Matsumura T, de la Hoz E, Basak S, Gruppuso A, et al. 2022. 2022(1):039\n\n\nPety J, Gerin M, Bron E, Gratier P, Orkisz JH, et al. 2022. Revealing which Combinations of Molecular Lines are Sensitive to the Gas Physical Parameters of Molecular Clouds. Astrophysics Meet Data Science towards the Orion B Cloud\n\n\nBoulanger F, Guillet V, Allys E, Berne ON, Falgarone E, et al. 2021. The turbulent magnetized interstellar medium: looking for ambipolar diffusion in the Pleiades\n\n\nBron E, Roueff E, Gerin M, Pety J, Gratier P, et al. 2021. 645:A28\n\n\nGratier P, Pety J, Bron E, Roueff A, Orkisz JH, et al. 2021. 645:A27\n\n\nLevrier F, Allys E, Régaldo-Saint Blancard B, Boulanger F, Jeffrey N, et al. 2021. Scattering transforms for interstellar astrophysics and beyond\n\n\nPlanck Collaboration, Aghanim N, Akrami Y, Ashdown M, Aumont J, et al. 2021. 652:C4\n\n\nRegaldo-Saint Blancard B, Allys E, Boulanger F, Levrier F, Jeffrey N. 2021. 649:L18\n\n\nRoueff A, Gerin M, Gratier P, Levrier F, Pety J, et al. 2021. 645:A26\n\n\nSekimoto Y, Ade PAR, Adler A, Allys E, Arnold K, et al. 2021. arXiv e-prints. arXiv:2101.06342\n\n\nGratier P, Pety J, Bron E, Roueff A, Orkisz JH, et al. 2020. VizieR Online Data Catalog: Orion B in 18 molecular tracers maps (Gratier+, 2021)\n\n\nHazumi M, Ade PAR, Adler A, Allys E, Arnold K, et al. 2020. LiteBIRD satellite: JAXA’s new strategic L-class mission for all-sky surveys of cosmic microwave background polarization\n\n\nLesaffre P, Todorov P, Levrier F, Valdivia V, Dzyurkevich N, et al. 2020. 495(1):816–34\n\n\nMontier L, Mot B, de Bernardis P, Maffei B, Pisano G, et al. 2020. Overview of the medium and high frequency telescopes of the LiteBIRD space mission\n\n\nPlanck Collaboration, Aghanim N, Akrami Y, Alves MIR, Ashdown M, et al. 2020a. 641:A12\n\n\nPlanck Collaboration, Aghanim N, Akrami Y, Arroja F, Ashdown M, et al. 2020b. 641:A1\n\n\nPlanck Collaboration, Aghanim N, Akrami Y, Ashdown M, Aumont J, et al. 2020f. 641:A8\n\n\nPlanck Collaboration, Aghanim N, Akrami Y, Ashdown M, Aumont J, et al. 2020e. 641:A6\n\n\nPlanck Collaboration, Aghanim N, Akrami Y, Ashdown M, Aumont J, et al. 2020d. 641:A5\n\n\nPlanck Collaboration, Aghanim N, Akrami Y, Ashdown M, Aumont J, et al. 2020c. 641:A3\n\n\nPlanck Collaboration, Akrami Y, Andersen KJ, Ashdown M, Baccigalupi C, et al. 2020g. 643:A42\n\n\nPlanck Collaboration, Akrami Y, Argüeso F, Ashdown M, Aumont J, et al. 2020h. 641:A2\n\n\nPlanck Collaboration, Akrami Y, Arroja F, Ashdown M, Aumont J, et al. 2020j. 641:A10\n\n\nPlanck Collaboration, Akrami Y, Arroja F, Ashdown M, Aumont J, et al. 2020i. 641:A9\n\n\nPlanck Collaboration, Akrami Y, Ashdown M, Aumont J, Baccigalupi C, et al. 2020o. 644:A100\n\n\nPlanck Collaboration, Akrami Y, Ashdown M, Aumont J, Baccigalupi C, et al. 2020n. 644:A99\n\n\nPlanck Collaboration, Akrami Y, Ashdown M, Aumont J, Baccigalupi C, et al. 2020m. 641:A11\n\n\nPlanck Collaboration, Akrami Y, Ashdown M, Aumont J, Baccigalupi C, et al. 2020l. 641:A7\n\n\nPlanck Collaboration, Akrami Y, Ashdown M, Aumont J, Baccigalupi C, et al. 2020k. 641:A4\n\n\nRegaldo-Saint Blancard B, Levrier F, Allys E, Bellomi E, Boulanger F. 2020a. 642:A217\n\n\nRegaldo-Saint Blancard B, Levrier F, Allys E, Bellomi E, Boulanger F. 2020b. PyWST: WST and RWST for astrophysics\n\n\nReissl S, Guillet V, Brauer R, Levrier F, Boulanger F, Klessen RS. 2020. 640:A118\n\n\nSekimoto Y, Ade PAR, Adler A, Allys E, Arnold K, et al. 2020. Concept design of low frequency telescope for CMB B-mode polarization satellite LiteBIRD\n\n\nAllys E, Levrier F, Zhang S, Colling C, Regaldo-Saint Blancard B, et al. 2019. 629:A115\n\n\nAndré Ph, Hughes A, Guillet V, Boulanger F, Bracco A, et al. 2019. 36:e029\n\n\nOrkisz JH, Peretto N, Pety J, Gerin M, Levrier F, et al. 2019. 624:A113\n\n\nBron E, Daudon C, Pety J, Levrier F, Gerin M, et al. 2018. 610:A12\n\n\nGuillet V, Fanciullo L, Verstraete L, Boulanger F, Jones AP, et al. 2018. 610:A16\n\n\nLevrier F, Neveu J, Falgarone E, Boulanger F, Bracco A, et al. 2018. 614:A124\n\n\nPlanck Collaboration, Aghanim N, Akrami Y, Ashdown M, Aumont J, et al. 2018a. 617:A48\n\n\nPlanck Collaboration, Akrami Y, Argueeso F, Ashdown M, Aumont J, et al. 2018b. VizieR Online Data Catalog: Planck Multi-frequency Cat. of Non-thermal Sources (Planck+, 2018)\n\n\nPlanck Collaboration, Akrami Y, Argüeso F, Ashdown M, Aumont J, et al. 2018c. 619:A94\n\n\nVansyngel F, Boulanger F, Ghosh T, Wandelt B, Aumont J, et al. 2018. 618:C4\n\n\nAcero F, Acquaviva J-T, Adam R, Aghanim N, Allen M, et al. 2017. arXiv e-prints. arXiv:1712.06950\n\n\nBron E, Daudon C, Pety J, Levrier F, Gerin M, et al. 2017. VizieR Online Data Catalog: Clustering the Orion B giant molecular cloud (Bron+, 2018)\n\n\nLevrier F. 2017. Polarized Thermal Emission From Galactic Dust As Seen By Planck\n\n\nOrkisz JH, Pety J, Gerin M, Bron E, Guzmán VV, et al. 2017. 599:A99\n\n\nPety J, Guzmán VV, Orkisz JH, Liszt HS, Gerin M, et al. 2017. 599:A98\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Aller HD, Aller MF, et al. 2017a. VizieR Online Data Catalog: 1Jy northern AGN sample (Planck+, 2016)\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Ashdown M, et al. 2017c. VizieR Online Data Catalog: Planck Catalogue of Galactic cold clumps (PGCC) (Planck+, 2016)\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Ashdown M, et al. 2017b. VizieR Online Data Catalog: Planck Sunyaev-Zeldovich sources (PSZ2) (Planck+, 2016)\n\n\nPlanck Collaboration, Aghanim N, Akrami Y, Ashdown M, Aumont J, et al. 2017d. 607:A95\n\n\nPlanck Collaboration, Aghanim N, Ashdown M, Aumont J, Baccigalupi C, et al. 2017e. 599:A51\n\n\nPlanck Collaboration, Akrami Y, Ashdown M, Aumont J, Baccigalupi C, et al. 2017f. 607:A122\n\n\nPlanck Collaboration Ade P. A. R., Aghanim N, Argueso F, Arnaud M, Ashdown M, et al. 2017. VizieR Online Data Catalog: Second Planck Catalogue of Compact Sources (PCCS2) (Planck+, 2016)\n\n\nVansyngel F, Boulanger F, Ghosh T, Wandelt B, Aumont J, et al. 2017. 603:A62\n\n\nAlina D, Montier L, Ristorcelli I, Bernard J-P, Levrier F, Abdikamalov E. 2016. 595:A57\n\n\nLevrier F, Aff001, Neveu J. 2016. IAU Focus Meeting. 29B:50–50\n\n\nLevrier F, Levrier, Neveu J. 2016. IAU Focus Meeting. 29B:745–45\n\n\nLevrier F, Neveu J. 2016. Polarized thermal dust emission as seen by Planck : A comparison with MHD simulations and lessons from a toy model\n\n\nPlanck Collaboration, Adam R, Ade PAR, Aghanim N, Akrami Y, et al. 2016a. 594:A1\n\n\nPlanck Collaboration, Adam R, Ade PAR, Aghanim N, Alves MIR, et al. 2016c. 594:A10\n\n\nPlanck Collaboration, Adam R, Ade PAR, Aghanim N, Alves MIR, et al. 2016b. 586:A135\n\n\nPlanck Collaboration, Adam R, Ade PAR, Aghanim N, Arnaud M, et al. 2016g. 594:A9\n\n\nPlanck Collaboration, Adam R, Ade PAR, Aghanim N, Arnaud M, et al. 2016f. 594:A8\n\n\nPlanck Collaboration, Adam R, Ade PAR, Aghanim N, Arnaud M, et al. 2016e. 594:A7\n\n\nPlanck Collaboration, Adam R, Ade PAR, Aghanim N, Arnaud M, et al. 2016d. 586:A133\n\n\nPlanck Collaboration, Adam R, Ade PAR, Aghanim N, Ashdown M, et al. 2016h. 596:A104\n\n\nPlanck Collaboration, Adam R, Ade PAR, Alves MIR, Ashdown M, et al. 2016i. 596:A103\n\n\nPlanck Collaboration, Adam R, Aghanim N, Ashdown M, Aumont J, et al. 2016j. 596:A108\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Akrami Y, Aluri PK, et al. 2016k. 594:A16\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Aller HD, Aller MF, et al. 2016l. 596:A106\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Alves MIR, Aniano G, et al. 2016m. 586:A132\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Alves MIR, Arnaud M, et al. 2016p. 594:A25\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Alves MIR, Arnaud M, et al. 2016o. 586:A138\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Alves MIR, Arnaud M, et al. 2016n. 586:A136\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Argüeso F, Arnaud M, et al. 2016q. 594:A26\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Arroja F, et al. 2016t. 594:A20\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Arroja F, et al. 2016s. 594:A19\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Arroja F, et al. 2016r. 594:A17\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Ashdown M, et al. 2016ag. 596:A101\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Ashdown M, et al. 2016af. 594:A28\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Ashdown M, et al. 2016ae. 594:A27\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Ashdown M, et al. 2016ad. 594:A24\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Ashdown M, et al. 2016ac. 594:A21\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Ashdown M, et al. 2016ab. 594:A18\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Ashdown M, et al. 2016aa. 594:A15\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Ashdown M, et al. 2016z. 594:A14\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Ashdown M, et al. 2016y. 594:A13\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Ashdown M, et al. 2016x. 594:A12\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Ashdown M, et al. 2016ah. VizieR Online Data Catalog: Optical ident. and redshifts of Planck SZ sources (Planck+, 2016)\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Ashdown M, et al. 2016w. 586:A141\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Ashdown M, et al. 2016v. 586:A140\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Ashdown M, et al. 2016u. 586:A139\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Aumont J, et al. 2016aj. 596:A100\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Aumont J, et al. 2016ak. VizieR Online Data Catalog: Planck high-z source candidates catalog (PHZ) (Planck+, 2016)\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Aumont J, et al. 2016ai. 594:A23\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Ashdown M, Aumont J, et al. 2016ap. 596:A102\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Ashdown M, Aumont J, et al. 2016ao. 594:A6\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Ashdown M, Aumont J, et al. 2016an. 594:A5\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Ashdown M, Aumont J, et al. 2016am. 594:A4\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Ashdown M, Aumont J, et al. 2016al. 594:A2\n\n\nPlanck Collaboration, Ade PAR, Aumont J, Baccigalupi C, Banday AJ, et al. 2016aq. 594:A3\n\n\nPlanck Collaboration, Aghanim N, Alves MIR, Arnaud M, Arzoumanian D, et al. 2016ar. 586:A137\n\n\nPlanck Collaboration, Aghanim N, Alves MIR, Arzoumanian D, Aumont J, et al. 2016as. 596:A105\n\n\nPlanck Collaboration, Aghanim N, Arnaud M, Ashdown M, Aumont J, et al. 2016au. 594:A22\n\n\nPlanck Collaboration, Aghanim N, Arnaud M, Ashdown M, Aumont J, et al. 2016at. 594:A11\n\n\nPlanck Collaboration, Aghanim N, Ashdown M, Aumont J, Baccigalupi C, et al. 2016ax. 596:A110\n\n\nPlanck Collaboration, Aghanim N, Ashdown M, Aumont J, Baccigalupi C, et al. 2016aw. 596:A109\n\n\nPlanck Collaboration, Aghanim N, Ashdown M, Aumont J, Baccigalupi C, et al. 2016av. 596:A107\n\n\nSoler JD, Alves F, Boulanger F, Bracco A, Falgarone E, et al. 2016. 596:A93\n\n\nBICEP2/Keck Collaboration, Planck Collaboration, Ade PAR, Aghanim N, Ahmed Z, et al. 2015. 114(10):101301\n\n\nFalgarone E, Hily-Blant P, Levrier F, Berthet M, Bastien P, Clemens D. 2015. Highlights of Astronomy. 16:388–88\n\n\nLeurini S, Wyrowski F, Wiesemeyer H, Gusdorf A, Güsten R, et al. 2015. 584:A70\n\n\nLevrier F. 2015b. Polarized thermal dust emission from Planck, a comparison with MHD simulations and lessons from a fBm model\n\n\nLevrier F. 2015a. Polarized thermal dust emission from Planck, a comparison with MHD simulations and lessons from a fBm model\n\n\nLevrier F, Neveu J. 2015. Statistical properties of polarized dust emission : lessons from a model of the turbulent and magnetized interstellar medium\n\n\nMontier L, Plaszczynski S, Levrier F, Tristram M, Alina D, et al. 2015b. 574:A136\n\n\nMontier L, Plaszczynski S, Levrier F, Tristram M, Alina D, et al. 2015a. 574:A135\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Alina D, Alves MIR, et al. 2015b. 576:A105\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Alina D, Alves MIR, et al. 2015a. 576:A104\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Alina D, Aniano G, et al. 2015c. 576:A106\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Ashdown M, et al. 2015e. 582:A29\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Arnaud M, Ashdown M, et al. 2015d. 582:A28\n\n\nPlanck Collaboration, Ade PAR, Alves MIR, Aniano G, Armitage-Caplan C, et al. 2015f. 576:A107\n\n\nPlanck Collaboration, Aghanim N, Altieri B, Arnaud M, Ashdown M, et al. 2015g. 582:A30\n\n\nPlanck Collaboration, Fermi Collaboration, Ade PAR, Aghanim N, Aniano G, et al. 2015h. 582:A31\n\n\nZarka P, Tagger M, Denis L, Girard JN, Konovalenko A, et al. 2015. NenUFAR: Instrument description and science case\n\n\nZaroubi S, Jelic V, de Bruyn AG, Boulanger F, Bracco A, et al. 2015. 454:L46–50\n\n\nPersson CM, Gerin M, Mookerjea B, Black JH, Olberg M, et al. 2014. 568:A37\n\n\nPlanck Collaboration, Abergel A, Ade PAR, Aghanim N, Alves MIR, et al. 2014b. 571:A11\n\n\nPlanck Collaboration, Abergel A, Ade PAR, Aghanim N, Alves MIR, et al. 2014a. 566:A55\n\n\nPlanck Collaboration, Ade PAR, Aghanim N, Alves MIR, Arnaud M, et al. 2014c. 564:A45\n\n\nPlaszczynski S, Montier L, Levrier F, Tristram M. 2014. 439(4):4048–56\n\n\nCommercon B, Levrier F, Maury A, Henning T, Launhardt R, Dullemond C. 2013. Radiation-Magneto Models for Star Formation and Synthetic Observations\n\n\nLevrier F, Commerçon B, Maury AJ, Henning Th, Launhardt R, Dullemond C. 2013. Simulated ALMA Observations of Collapsing Low-mass Dense Cores\n\n\nCommerçon B, Hennebelle P, Levrier F, Launhardt R, Henning Th. 2012a. 3D numerical calculations and synthetic observations of magnetized massive dense core collapse and fragmentation.\n\n\nCommerçon B, Levrier F, Maury AJ, Henning Th, Launhardt R. 2012b. 548:A39\n\n\nGerin M, Levrier F, Falgarone E, Godard B, Hennebelle P, et al. 2012. Philosophical Transactions of the Royal Society of London Series A. 370(1978):5174–85\n\n\nLevrier F, Le Petit F, Hennebelle P, Lesaffre P, Gerin M, Falgarone E. 2012. 544:A22\n\n\nLevrier F, Le Petit F, Hennebelle P, Lesaffre P, Gerin M, Falgarone E. 2011. Applying the Meudon PDR code on dense structures from MHD simulations of the ISM\n\n\nKloeckner HR, Auld R, Heywood I, Obreschkow D, Levrier F, Rawlings S. 2010. arXiv e-prints. arXiv:1002.0502\n\n\nKloeckner HR, Auld R, Heywood IH, Obreschkow D, Levrier F, Rawlings S. 2009. SKA HI end2end simulation\n\n\nLevrier F, Gerin M, Hennebelle P, Falgarone E, Le Petit F, Goicoechea JR. 2009a. Simulated [CII] Observations for SPICA/SAFARI\n\n\nLevrier F, Wilman RJ, Obreschkow D, Kloeckner HR, Heywood IH, Rawlings S. 2009b. Mapping the SKA Simulated Skies with the S3-Tools\n\n\nObreschkow D, Klöckner H-R, Heywood I, Levrier F, Rawlings S. 2009. 703(2):1890–1903\n\n\nWilman RJ, Miller L, Jarvis MJ, Mauch T, Levrier F, et al. 2008. 388(3):1335–48\n\n\nFalgarone E, Levrier F, Hily-Blant P. 2007. The structure of the cold diffuse interstellar medium\n\n\nLevrier F, Falgarone E, Viallefond F. 2007. arXiv e-prints. arXiv:0704.2286\n\n\nLevrier F, Falgarone E, Viallefond F. 2006. 456(1):205–14\n\n\nFalgarone E, Hily-Blant P, Levrier F. 2004. 292(1):89–101\n\n\nLevrier F. 2004. 421:387–98\n\n\nThuan TX, Hibbard JE, Lévrier F. 2004. 128(2):617–43\n\n\nMiville-Deschênes M-A, Levrier F, Falgarone E. 2003. 593(2):831–47\n\n\nThuan TX, Hubbard JE, Levrier F. 2001. HI in Four Blue Compact Dwarf Galaxies"
-  },
-  {
-    "objectID": "software.html#polar-tools",
-    "href": "software.html#polar-tools",
-    "title": "Software",
-    "section": "Polar Tools",
-    "text": "Polar Tools"
+    "objectID": "students.html#master-students",
+    "href": "students.html#master-students",
+    "title": "Students",
+    "section": "Master Students",
+    "text": "Master Students\n\nName – project – year"
   }
 ]
