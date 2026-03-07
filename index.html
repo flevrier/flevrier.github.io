@@ -169,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="françois-levrier" class="level3">
 <h3 class="anchored" data-anchor-id="françois-levrier">François Levrier</h3>
 <p>Professor of Astrophysics<br>
-Laboratoire de Radioastronomie<br>
+Laboratoire de Physique de l’ENS (LPENS)<br>
 École Normale Supérieure – Paris</p>
 <p><a href="https://scholar.google.com">Google Scholar</a><br>
 <a href="https://ui.adsabs.harvard.edu">ADS</a></p>
@@ -246,8 +246,15 @@ document.getElementById("ads-publications").innerHTML = html;
 fetch("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
 .then(response => response.json())
 .then(data => {
-  document.getElementById("apod").innerHTML =
-  `<img src="${data.url}" width="500"><p>${data.title}</p>`;
+
+let html = `
+<h3>${data.title}</h3>
+<img src="${data.url}" style="max-width:600px;">
+<p>${data.explanation}</p>
+`;
+
+document.getElementById("apod").innerHTML = html;
+
 });
 
 </script>
