@@ -269,7 +269,7 @@ fetch("latest.json")
   .then(d => {
     document.getElementById("latest-paper").innerHTML = `
       <div class="card">
-        <h3>${d.title}</h3>
+        <h3><strong>${d.title}</strong></h3>
         <p class="authors"><em>${d.authors}</em></p>
         <p class="abstract">${d.abstract}</p>
         <p class="links">
