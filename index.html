@@ -182,32 +182,56 @@ ul.task-list li input[type="checkbox"] {
 <p>Loading latest Bluesky post…</p>
 </div>
 <script>
+
 const handle = "francoislevrier.bsky.social";
 
-fetch(`https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=${handle}&limit=1`)
-.then(r => r.json())
-.then(data => {
+async function getPostToDisplay() {
 
-const item = data.feed[0];
-const record = item.post.record;
+  const feed = await fetch(
+    `https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=${handle}&limit=1`
+  ).then(r => r.json());
 
-const text = record.text;
-const date = new Date(record.createdAt).toLocaleDateString();
+  let item = feed.feed[0];
+  let uri = item.post.uri;
 
-const uri = item.post.uri;
-const rkey = uri.split("/").pop();
+  // Si le post est une réponse dans un thread
+  if (item.post.record.reply) {
 
-const postUrl = `https://bsky.app/profile/${handle}/post/${rkey}`;
+    const thread = await fetch(
+      `https://public.api.bsky.app/xrpc/app.bsky.feed.getPostThread?uri=${uri}&depth=10`
+    ).then(r => r.json());
 
-let imageHTML = "";
+    // remonter au post racine
+    let root = thread.thread;
+    while (root.parent) {
+      root = root.parent;
+    }
 
-if (item.post.embed && item.post.embed.images) {
-  const img = item.post.embed.images[0].fullsize;
-  imageHTML = `<img src="${img}" style="max-width:300px;margin-top:8px;border-radius:6px;">`;
+    return root.post;
+
+  }
+
+  return item.post;
 }
 
-document.getElementById("bluesky").innerHTML = `
-<h3>Latest Bluesky post</h3>
+getPostToDisplay().then(post => {
+
+  const record = post.record;
+  const text = record.text;
+  const date = new Date(record.createdAt).toLocaleDateString();
+
+  const rkey = post.uri.split("/").pop();
+  const postUrl = `https://bsky.app/profile/${handle}/post/${rkey}`;
+
+  let imageHTML = "";
+
+  if (post.embed && post.embed.images) {
+    const img = post.embed.images[0].fullsize;
+    imageHTML = `<img src="${img}" style="max-width:300px;margin-top:8px;border-radius:6px;">`;
+  }
+
+  document.getElementById("bluesky").innerHTML = `
+<h3>Latest Bluesky thread</h3>
 
 <div style="border-left:4px solid #1185fe;padding-left:12px">
 
@@ -215,7 +239,7 @@ document.getElementById("bluesky").innerHTML = `
 
 ${imageHTML}
 
-<p style="font-size:0.8em;color:gray;margin-top:6px">
+<p style="font-size:0.8em;color:gray">
 ${date} — <a href="${postUrl}" target="_blank">view on Bluesky</a>
 </p>
 
@@ -224,9 +248,10 @@ ${date} — <a href="${postUrl}" target="_blank">view on Bluesky</a>
 
 })
 .catch(err => {
-document.getElementById("bluesky").innerHTML =
-"Bluesky feed unavailable.";
+  document.getElementById("bluesky").innerHTML =
+  "Bluesky feed unavailable.";
 });
+
 </script>
 </div><div class="column" style="width:70%;">
 <section id="short-bio" class="level2">
