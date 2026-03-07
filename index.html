@@ -202,21 +202,26 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="files/radiative_processes.pdf">Radiative Processes</a></li>
 </ul>
 <hr>
-</section>
-<section id="astronomy-picture-of-the-day" class="level2">
-<h2 class="anchored" data-anchor-id="astronomy-picture-of-the-day">Astronomy Picture of the Day</h2>
 <div id="apod">
 
 </div>
 <script>
-fetch("https://api.nasa.gov/planetary/apod?api_key=Ou5foa1QNKulBvRHkdQNLnTXz8pjwCcMP2de7ayf ")
+fetch("https://api.nasa.gov/planetary/apod?api_key=Ou5foa1QNKulBvRHkdQNLnTXz8pjwCcMP2de7ayf")
 .then(r => r.json())
 .then(d => {
 
 document.getElementById("apod").innerHTML = `
-<h3>Astronomy Picture of the Day : ${d.title}</h3>
-<img src="${d.url}" style="max-width:300px;">
-<p>${d.explanation}</p>
+<h3>Astronomy Picture of the Day: ${d.title}</h3>
+
+<div style="display:flex; gap:20px; align-items:flex-start;">
+
+  <img src="${d.url}" style="max-width:320px; height:auto;">
+
+  <div style="font-size:0.85em; line-height:1.4;">
+    ${d.explanation}
+  </div>
+
+</div>
 `;
 
 });
