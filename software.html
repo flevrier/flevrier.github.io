@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>François Levrier</title>
+<title>Software – François Levrier</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -93,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -113,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Students</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./software.html"> 
+    <a class="nav-link active" href="./software.html" aria-current="page"> 
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
@@ -128,23 +128,30 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#s3-tools" id="toc-s3-tools" class="nav-link active" data-scroll-target="#s3-tools">S3 Tools</a></li>
+  <li><a href="#polar-tools" id="toc-polar-tools" class="nav-link" data-scroll-target="#polar-tools">Polar Tools</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">François Levrier</h1>
+<h1 class="title">Software</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta">
 
     
   
@@ -156,190 +163,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="images/FrancoisLevrier.jpg" style="width:200px; border-radius:8px;"></p>
-<p>Professeur</p>
-<div style="font-size:0.85em; line-height:1.4;">
-Équipe d’astrophysique
-</div>
-<p><a href="https://www.lpens.ens.psl.eu/">LPENS</a> - <a href="https://www.ens.psl.eu/">ENS</a> - <a href="https://psl.eu/">PSL</a></p>
-<p>Office HL102A <br> +33 1 44 32 39 93 <br> francois.levrier@ens.fr</p>
-<p><a href="https://scholar.google.com/citations?hl=en&amp;user=LG1x7ZIAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Google Scholar</a><br>
-<a href="https://ui.adsabs.harvard.edu/search/p_=0&amp;q=author%3A(%22levrier%2C%20f%22)&amp;sort=date%20desc%2C%20bibcode%20desc">NASA ADS</a></p>
-<hr>
-<ul>
-<li>🐦 <a href="https://twitter.com/FrancoisLevrier">Twitter</a></li>
-<li>🦋 <a href="https://bsky.app/profile/francoislevrier.bsky.social">Bluesky</a></li>
-</ul>
-<div id="bluesky">
-<p>Loading latest Bluesky post…</p>
-</div>
-<script>
-
-const handle = "francoislevrier.bsky.social";
-
-async function getPostToDisplay() {
-
-  const feed = await fetch(
-    `https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=${handle}&limit=1`
-  ).then(r => r.json());
-
-  let item = feed.feed[0];
-  let uri = item.post.uri;
-
-  // Si le post est une réponse dans un thread
-  if (item.post.record.reply) {
-
-    const thread = await fetch(
-      `https://public.api.bsky.app/xrpc/app.bsky.feed.getPostThread?uri=${uri}&depth=10`
-    ).then(r => r.json());
-
-    // remonter au post racine
-    let root = thread.thread;
-    while (root.parent) {
-      root = root.parent;
-    }
-
-    return root.post;
-
-  }
-
-  return item.post;
-}
-
-getPostToDisplay().then(post => {
-
-  const record = post.record;
-  const text = record.text;
-  const date = new Date(record.createdAt).toLocaleDateString();
-
-  const rkey = post.uri.split("/").pop();
-  const postUrl = `https://bsky.app/profile/${handle}/post/${rkey}`;
-
-  let imageHTML = "";
-
-  if (post.embed && post.embed.images) {
-    const img = post.embed.images[0].fullsize;
-    imageHTML = `<img src="${img}" style="max-width:95%;margin-top:8px;border-radius:6px;">`;
-  }
-
-  document.getElementById("bluesky").innerHTML = `
-
-<div style="border-left:4px solid #1185fe;padding-left:12px">
-
-<p style="max-width:95%; font-size:0.85em; line-height:1.35;">${text}</p>
-
-${imageHTML}
-
-<p style="font-size:0.8em;color:gray">
-${date} — <a href="${postUrl}" target="_blank">view on Bluesky</a>
-</p>
-
-</div>
-`;
-
-})
-.catch(err => {
-  document.getElementById("bluesky").innerHTML =
-  "Bluesky feed unavailable.";
-});
-
-</script>
-</div><div class="column" style="width:70%;">
-<section id="short-bio" class="level2">
-<h2 class="anchored" data-anchor-id="short-bio">Short Bio</h2>
-<p>I work on the physics and chemistry of the <strong>interstellar medium</strong>, including:</p>
-<ul>
-<li>molecular clouds</li>
-<li>astrochemistry</li>
-<li>radiative transfer</li>
-<li>turbulence</li>
-</ul>
+<section id="s3-tools" class="level2">
+<h2 class="anchored" data-anchor-id="s3-tools">S3 Tools</h2>
 <hr>
 </section>
-<section id="latest-publications" class="level2">
-<h2 class="anchored" data-anchor-id="latest-publications">Latest Publications</h2>
-<div id="latest-paper">
+<section id="polar-tools" class="level2">
+<h2 class="anchored" data-anchor-id="polar-tools">Polar Tools</h2>
 
-</div>
-<script>
-fetch("latest.json")
-.then(r => r.json())
-.then(d => {
 
-document.getElementById("latest-paper").innerHTML = `
-
-<h3>Latest publication</h3>
-
-<p><strong>${d.title}</strong></p>
-
-<p style="font-size:0.9em">${d.authors}</p>
-
-<p style="font-size:0.85em;color:gray">
-${d.year}
-</p>
-
-<p style="font-size:0.9em;line-height:1.35">
-${d.abstract}
-</p>
-
-<p>
-${d.ads ? `<a href="${d.ads}" target="_blank">ADS</a>` : ""}
-${d.arxiv ? ` | <a href="${d.arxiv}" target="_blank">arXiv</a>` : ""}
-${d.pdf ? ` | <a href="${d.pdf}" target="_blank">PDF</a>` : ""}
-</p>
-
-`;
-
-});
-</script>
-<hr>
 </section>
-<section id="lecture-notes" class="level2">
-<h2 class="anchored" data-anchor-id="lecture-notes">Lecture Notes</h2>
-<ul>
-<li><a href="files/ism_course.pdf">Interstellar Medium course</a></li>
-<li><a href="files/radiative_processes.pdf">Radiative Processes</a></li>
-</ul>
-<hr>
-<div id="apod">
-
-</div>
-<script>
-fetch("https://api.nasa.gov/planetary/apod?api_key=Ou5foa1QNKulBvRHkdQNLnTXz8pjwCcMP2de7ayf")
-.then(r => r.json())
-.then(d => {
-
-document.getElementById("apod").innerHTML = `
-<h3>Astronomy Picture of the Day: ${d.title}</h3>
-
-<div style="display:flex; gap:20px; align-items:flex-start;">
-
-  <img src="${d.url}" style="max-width:320px; height:auto;">
-
-  <div style="font-size:0.85em; line-height:1.4;">
-    ${d.explanation}
-  </div>
-
-</div>
-`;
-
-});
-</script>
-<hr>
-<iframe src="https://calendar.google.com/calendar/embed?src=ZnJhbmNvaXMubGV2cmllckBnbWFpbC5jb20" style="border:0" width="600" height="400" frameborder="0" scrolling="no">
-</iframe>
-</section>
-</div>
-</div>
-<hr>
-<div id="quote">
-
-</div>
-<script src="quotes.js"></script>
-
-
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
