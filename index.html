@@ -188,14 +188,37 @@ fetch(`https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=${hand
 .then(r => r.json())
 .then(data => {
 
-const post = data.feed[0].post.record.text;
-const date = new Date(data.feed[0].post.record.createdAt).toLocaleDateString();
+const item = data.feed[0];
+const record = item.post.record;
+
+const text = record.text;
+const date = new Date(record.createdAt).toLocaleDateString();
+
+const uri = item.post.uri;
+const rkey = uri.split("/").pop();
+
+const postUrl = `https://bsky.app/profile/${handle}/post/${rkey}`;
+
+let imageHTML = "";
+
+if (item.post.embed && item.post.embed.images) {
+  const img = item.post.embed.images[0].fullsize;
+  imageHTML = `<img src="${img}" style="max-width:300px;margin-top:8px;border-radius:6px;">`;
+}
 
 document.getElementById("bluesky").innerHTML = `
 <h3>Latest Bluesky post</h3>
-<div style="border-left:3px solid #4c9aff;padding-left:12px">
-<p style="margin:0">${post}</p>
-<p style="font-size:0.8em;color:gray">${date}</p>
+
+<div style="border-left:4px solid #1185fe;padding-left:12px">
+
+<p>${text}</p>
+
+${imageHTML}
+
+<p style="font-size:0.8em;color:gray;margin-top:6px">
+${date} — <a href="${postUrl}" target="_blank">view on Bluesky</a>
+</p>
+
 </div>
 `;
 
