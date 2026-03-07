@@ -137,7 +137,6 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#on-my-agenda" id="toc-on-my-agenda" class="nav-link active" data-scroll-target="#on-my-agenda">On my agenda</a></li>
-  <li><a href="#latest-tweet" id="toc-latest-tweet" class="nav-link" data-scroll-target="#latest-tweet">Latest Tweet</a></li>
   </ul>
 </nav>
     </div>
@@ -179,6 +178,34 @@ ul.task-list li input[type="checkbox"] {
 <li>🐦 <a href="https://twitter.com/FrancoisLevrier">Twitter</a></li>
 <li>🦋 <a href="https://bsky.app/profile/francoislevrier.bsky.social">Bluesky</a></li>
 </ul>
+<hr>
+<div id="bluesky">
+<p>Loading latest Bluesky post…</p>
+</div>
+<script>
+const handle = "francoislevrier.bsky.social";
+
+fetch(`https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=${handle}&limit=1`)
+.then(r => r.json())
+.then(data => {
+
+const post = data.feed[0].post.record.text;
+const date = new Date(data.feed[0].post.record.createdAt).toLocaleDateString();
+
+document.getElementById("bluesky").innerHTML = `
+<h3>Latest Bluesky post</h3>
+<div style="border-left:3px solid #4c9aff;padding-left:12px">
+<p style="margin:0">${post}</p>
+<p style="font-size:0.8em;color:gray">${date}</p>
+</div>
+`;
+
+})
+.catch(err => {
+document.getElementById("bluesky").innerHTML =
+"Bluesky feed unavailable.";
+});
+</script>
 </div><div class="column" style="width:70%;">
 <section id="short-bio" class="level2">
 <h2 class="anchored" data-anchor-id="short-bio">Short Bio</h2>
@@ -235,40 +262,6 @@ document.getElementById("apod").innerHTML = `
 <h2 class="anchored" data-anchor-id="on-my-agenda">On my agenda</h2>
 <iframe src="https://calendar.google.com/calendar/embed?src=ZnJhbmNvaXMubGV2cmllckBnbWFpbC5jb20" style="border:0" width="600" height="400" frameborder="0" scrolling="no">
 </iframe>
-<hr>
-</section>
-<section id="latest-tweet" class="level2">
-<h2 class="anchored" data-anchor-id="latest-tweet">Latest Tweet</h2>
-<p><a class="twitter-timeline" href="https://twitter.com/FrancoisLevrier"> Tweets </a></p>
-<script async="" src="https://platform.twitter.com/widgets.js"></script>
-<hr>
-<div id="bluesky">
-<p>Loading latest Bluesky post…</p>
-</div>
-<script>
-const handle = "francoislevrier.bsky.social";
-
-fetch(`https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=${handle}&limit=1`)
-.then(r => r.json())
-.then(data => {
-
-const post = data.feed[0].post.record.text;
-const date = new Date(data.feed[0].post.record.createdAt).toLocaleDateString();
-
-document.getElementById("bluesky").innerHTML = `
-<h3>Latest Bluesky post</h3>
-<div style="border-left:3px solid #4c9aff;padding-left:12px">
-<p style="margin:0">${post}</p>
-<p style="font-size:0.8em;color:gray">${date}</p>
-</div>
-`;
-
-})
-.catch(err => {
-document.getElementById("bluesky").innerHTML =
-"Bluesky feed unavailable.";
-});
-</script>
 <hr>
 <div id="quote">
 
