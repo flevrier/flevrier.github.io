@@ -1,4 +1,4 @@
-fetch("quotes.txt")
+fetch("files/quotes.txt")
 .then(response => response.text())
 .then(text => {
 
