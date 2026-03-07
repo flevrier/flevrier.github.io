@@ -260,7 +260,69 @@ ${date} — <a href="${postUrl}" target="_blank">view on Bluesky</a>
 </section>
 <section id="latest-publications" class="level2">
 <h2 class="anchored" data-anchor-id="latest-publications">Latest Publications</h2>
-<p>toto</p>
+<div id="latest-paper">
+<p>Loading latest publication…</p>
+</div>
+<script>
+
+const author = "Levrier";   // adapter au format arXiv
+
+fetch(`https://export.arxiv.org/api/query?search_query=au:${author}&sortBy=submittedDate&sortOrder=descending&max_results=1`)
+.then(r => r.text())
+.then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
+.then(data => {
+
+const entry = data.querySelector("entry");
+
+const title = entry.querySelector("title").textContent.trim();
+const abstract = entry.querySelector("summary").textContent.trim();
+
+const authors = [...entry.querySelectorAll("author name")]
+  .map(a => a.textContent)
+  .join(", ");
+
+const pdf = entry.querySelector("link[title='pdf']").getAttribute("href");
+
+let journal = entry.querySelector("arxiv\\:journal_ref");
+journal = journal ? journal.textContent : "arXiv preprint";
+
+document.getElementById("latest-paper").innerHTML = `
+
+<h3>Latest publication</h3>
+
+<div style="border-left:4px solid #555;padding-left:12px">
+
+<p style="margin-bottom:6px">
+<strong>${title}</strong>
+</p>
+
+<p style="font-size:0.9em;margin-top:0">
+${authors}
+</p>
+
+<p style="font-size:0.85em;color:gray">
+${journal}
+</p>
+
+<p style="font-size:0.9em;line-height:1.35">
+${abstract}
+</p>
+
+<p style="font-size:0.85em">
+<a href="${pdf}" target="_blank">PDF</a>
+</p>
+
+</div>
+
+`;
+
+})
+.catch(err => {
+document.getElementById("latest-paper").innerHTML =
+"Latest publication unavailable.";
+});
+
+</script>
 <hr>
 </section>
 <section id="lecture-notes" class="level2">
