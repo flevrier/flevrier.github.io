@@ -242,6 +242,34 @@ document.getElementById("apod").innerHTML = `
 <p><a class="twitter-timeline" href="https://twitter.com/FrancoisLevrier"> Tweets </a></p>
 <script async="" src="https://platform.twitter.com/widgets.js"></script>
 <hr>
+<div id="bluesky">
+<p>Loading latest Bluesky post…</p>
+</div>
+<script>
+const handle = "francoislevrier.bsky.social";
+
+fetch(`https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=${handle}&limit=1`)
+.then(r => r.json())
+.then(data => {
+
+const post = data.feed[0].post.record.text;
+const date = new Date(data.feed[0].post.record.createdAt).toLocaleDateString();
+
+document.getElementById("bluesky").innerHTML = `
+<h3>Latest Bluesky post</h3>
+<div style="border-left:3px solid #4c9aff;padding-left:12px">
+<p style="margin:0">${post}</p>
+<p style="font-size:0.8em;color:gray">${date}</p>
+</div>
+`;
+
+})
+.catch(err => {
+document.getElementById("bluesky").innerHTML =
+"Bluesky feed unavailable.";
+});
+</script>
+<hr>
 <div id="quote">
 
 </div>
