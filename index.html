@@ -274,16 +274,24 @@ document.getElementById("latest-paper").innerHTML = `
 
 <p><strong>${d.title}</strong></p>
 
-<p>${d.authors.join(", ")}</p>
+<p style="font-size:0.9em">${d.authors}</p>
 
-<p>${d.abstract}</p>
+<p style="font-size:0.85em;color:gray">
+${d.year}
+</p>
+
+<p style="font-size:0.9em;line-height:1.35">
+${d.abstract}
+</p>
 
 <p>
-<a href="${d.adsurl}" target="_blank">ADS</a>
+${d.ads ? `<a href="${d.ads}" target="_blank">ADS</a>` : ""}
+${d.arxiv ? ` | <a href="${d.arxiv}" target="_blank">arXiv</a>` : ""}
 ${d.pdf ? ` | <a href="${d.pdf}" target="_blank">PDF</a>` : ""}
 </p>
 
 `;
+
 });
 </script>
 <hr>
