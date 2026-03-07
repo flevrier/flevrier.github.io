@@ -1,1 +1,16 @@
 /* css styles */
+body {
+  font-size: 18px;
+}
+
+h1,h2,h3 {
+  font-weight: 500;
+}
+
+img {
+  border-radius: 8px;
+}
+
+.navbar {
+  font-size: 17px;
+}

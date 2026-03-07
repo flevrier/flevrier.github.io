@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Home – François Levrier</title>
+<title>Publications – François Levrier</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -128,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -136,25 +136,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#françois-levrier" id="toc-françois-levrier" class="nav-link active" data-scroll-target="#françois-levrier">François Levrier</a>
-  <ul class="collapse">
-  <li><a href="#research-interests" id="toc-research-interests" class="nav-link" data-scroll-target="#research-interests">Research interests</a></li>
-  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
-  </ul></li>
+  <li><a href="#calendar" id="toc-calendar" class="nav-link active" data-scroll-target="#calendar">Calendar</a></li>
+  <li><a href="#latest-tweet" id="toc-latest-tweet" class="nav-link" data-scroll-target="#latest-tweet">Latest Tweet</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Home</h1>
+<h1 class="title">Publications</h1>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -166,30 +163,110 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="françois-levrier" class="level2">
-<h2 class="anchored" data-anchor-id="françois-levrier">François Levrier</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><img src="images/FrancoisLevrier.jpg" class="img-fluid"></p>
+<section id="françois-levrier" class="level3">
+<h3 class="anchored" data-anchor-id="françois-levrier">François Levrier</h3>
 <p>Professor of Astrophysics<br>
 Laboratoire de Radioastronomie<br>
-École Normale Supérieure, Paris</p>
-<section id="research-interests" class="level3">
-<h3 class="anchored" data-anchor-id="research-interests">Research interests</h3>
+École Normale Supérieure – Paris</p>
+<p><a href="https://scholar.google.com">Google Scholar</a><br>
+<a href="https://ui.adsabs.harvard.edu">ADS</a></p>
+<hr>
+</section>
+<section id="social" class="level3">
+<h3 class="anchored" data-anchor-id="social">Social</h3>
 <ul>
-<li>Interstellar medium</li>
-<li>Molecular clouds</li>
-<li>Radiative transfer</li>
-<li>Astrochemical processes</li>
+<li>🐦 <a href="https://twitter.com/FrancoisLevrier">Twitter</a></li>
+<li>🦋 <a href="https://bsky.app/profile/francoislevrier.bsky.social">Bluesky</a></li>
 </ul>
 </section>
-<section id="contact" class="level3">
-<h3 class="anchored" data-anchor-id="contact">Contact</h3>
-<p>Laboratoire de Radioastronomie<br>
-ENS Paris</p>
-<p>Email: francois.levrier@ens.fr— title: “Website” —</p>
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
-
-
+</div><div class="column" style="width:70%;">
+<section id="short-bio" class="level2">
+<h2 class="anchored" data-anchor-id="short-bio">Short Bio</h2>
+<p>I work on the physics and chemistry of the <strong>interstellar medium</strong>, including:</p>
+<ul>
+<li>molecular clouds</li>
+<li>astrochemistry</li>
+<li>radiative transfer</li>
+<li>turbulence</li>
+</ul>
+<hr>
 </section>
+<section id="latest-publications" class="level2">
+<h2 class="anchored" data-anchor-id="latest-publications">Latest Publications</h2>
+<div id="ads-publications">
+
+</div>
+<script>
+
+fetch("https://api.adsabs.harvard.edu/v1/search/query?q=author:levrier&fl=title,year,author")
+.then(r => r.json())
+.then(data => {
+
+let html = "<ul>";
+
+data.response.docs.slice(0,10).forEach(p => {
+  html += `<li>${p.author[0]} et al., ${p.year}, ${p.title}</li>`;
+});
+
+html += "</ul>";
+
+document.getElementById("ads-publications").innerHTML = html;
+
+});
+
+</script>
+<hr>
+</section>
+<section id="lecture-notes" class="level2">
+<h2 class="anchored" data-anchor-id="lecture-notes">Lecture Notes</h2>
+<ul>
+<li><a href="files/ism_course.pdf">Interstellar Medium course</a></li>
+<li><a href="files/radiative_processes.pdf">Radiative Processes</a></li>
+</ul>
+<hr>
+</section>
+<section id="quote-of-the-day" class="level2">
+<h2 class="anchored" data-anchor-id="quote-of-the-day">Quote of the Day</h2>
+<div id="quote">
+
+</div>
+<script src="quotes.js"></script>
+<hr>
+</section>
+<section id="astronomy-picture-of-the-day" class="level2">
+<h2 class="anchored" data-anchor-id="astronomy-picture-of-the-day">Astronomy Picture of the Day</h2>
+<div id="apod">
+
+</div>
+<script>
+
+fetch("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
+.then(response => response.json())
+.then(data => {
+  document.getElementById("apod").innerHTML =
+  `<img src="${data.url}" width="500"><p>${data.title}</p>`;
+});
+
+</script>
+</section>
+</div>
+</div>
+<hr>
+<section id="calendar" class="level2">
+<h2 class="anchored" data-anchor-id="calendar">Calendar</h2>
+<iframe src="https://calendar.google.com/calendar/embed?src=ZnJhbmNvaXMubGV2cmllckBnbWFpbC5jb20" style="border:0" width="800" height="600" frameborder="0" scrolling="no">
+</iframe>
+<hr>
+</section>
+<section id="latest-tweet" class="level2">
+<h2 class="anchored" data-anchor-id="latest-tweet">Latest Tweet</h2>
+<p><a class="twitter-timeline" href="https://twitter.com/FrancoisLevrier"> Tweets </a></p>
+<script async="" src="https://platform.twitter.com/widgets.js"></script>
+
+
 </section>
 
 </main> <!-- /main -->

@@ -156,16 +156,28 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>A full list of publications is available on:</p>
-<ul>
-<li>Google Scholar</li>
-<li>ADS</li>
-</ul>
-<p>Selected publications:</p>
-<ul>
-<li>Levrier et al.&nbsp;(2012) …</li>
-<li>Levrier et al.&nbsp;(2018) …</li>
-</ul>
+<div id="ads-publications">
+
+</div>
+<script>
+
+fetch("https://api.adsabs.harvard.edu/v1/search/query?q=author:levrier&fl=title,year,author")
+.then(r => r.json())
+.then(data => {
+
+let html = "<ul>";
+
+data.response.docs.slice(0,10).forEach(p => {
+  html += `<li>${p.author[0]} et al., ${p.year}, ${p.title}</li>`;
+});
+
+html += "</ul>";
+
+document.getElementById("ads-publications").innerHTML = html;
+
+});
+
+</script>
 
 
 
