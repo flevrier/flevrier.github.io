@@ -214,7 +214,7 @@ fetch("https://api.nasa.gov/planetary/apod?api_key=Ou5foa1QNKulBvRHkdQNLnTXz8pjw
 .then(d => {
 
 document.getElementById("apod").innerHTML = `
-<h3>${d.title}</h3>
+<h3>Astronomy Picture of the Day : ${d.title}</h3>
 <img src="${d.url}" style="max-width:300px;">
 <p>${d.explanation}</p>
 `;
