@@ -273,7 +273,7 @@ fetch("latest.json")
     document.getElementById("latest-paper").innerHTML = `
       <div class="card">
         <h3><strong>${d.title}</strong></h3>
-        <p class="authors"><em>${d.authors}</em></p>
+        <p class="authors"><em>${d.authors}</em> (${d.year})</p>
         <p class="links">
           ${d.ads ? `<a href="${d.ads}" target="_blank">ADS</a>` : ""}
           ${d.arxiv ? ` | <a href="${d.arxiv}" target="_blank">arXiv</a>` : ""}
