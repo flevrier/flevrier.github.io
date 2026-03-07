@@ -15,14 +15,10 @@ jobs:
       - uses: quarto-dev/quarto-actions/setup@v2
 
       - name: install python deps
-        run: pip install requests
+        run: pip install requests bibtexparser
 
-      - name: fetch latest ADS publication
-        env:
-          ADS_TOKEN: ${{ secrets.ADS_TOKEN }}
-        run: |
-          sed -i "s/<<<ADS_TOKEN>>>/$ADS_TOKEN/" scripts/fetch_latest_ads.py
-          python scripts/fetch_latest_ads.py
+      - name: generate latest publication json
+        run: python scripts/latest_from_bib.py
 
       - name: render site
         run: quarto render
