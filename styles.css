@@ -69,28 +69,25 @@ font-size: 0.95em;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 12px;
-  margin-top: 10px;
 }
 
 .pub-card h3 {
-  margin-top: 0;
+  margin: 0 0 4px 0;
   font-size: 1.1em;
 }
 
 .pub-card .authors {
+  margin: 0 0 6px 0;
   font-size: 0.9em;
 }
 
-.pub-card .year {
-  color: gray;
-  font-size: 0.85em;
-}
-
 .pub-card .abstract {
+  margin: 0 0 6px 0;
   font-size: 0.9em;
   line-height: 1.4;
 }
 
 .pub-card .links {
+  margin: 0;
   font-size: 0.85em;
 }
