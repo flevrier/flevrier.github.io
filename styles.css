@@ -26,3 +26,41 @@ img {
 .pub p {
   margin: 5px 0;
 }
+
+.pubcard {
+
+border-left: 4px solid #3b7ddd;
+padding: 15px;
+margin-bottom: 25px;
+background: #fafafa;
+
+}
+
+.pubcard h3 {
+margin-top: 0;
+}
+
+.pubauthors {
+color: #555;
+font-size: 0.95em;
+}
+
+.pubbuttons {
+margin-top: 10px;
+}
+
+.pubbuttons a,
+.pubbuttons button {
+
+margin-right: 10px;
+padding: 4px 10px;
+border-radius: 5px;
+border: 1px solid #ccc;
+background: white;
+cursor: pointer;
+}
+
+.abstract {
+margin-top: 10px;
+font-size: 0.95em;
+}
