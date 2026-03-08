@@ -167,7 +167,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#s3-tools" id="toc-s3-tools" class="nav-link active" data-scroll-target="#s3-tools">S3 Tools</a>
+  <li><a href="#simpolar" id="toc-simpolar" class="nav-link active" data-scroll-target="#simpolar">SimPolar</a></li>
+  <li><a href="#s3-tools" id="toc-s3-tools" class="nav-link" data-scroll-target="#s3-tools">S3 Tools</a>
   <ul class="collapse">
   <li><a href="#features" id="toc-features" class="nav-link" data-scroll-target="#features">Features</a></li>
   <li><a href="#requirements" id="toc-requirements" class="nav-link" data-scroll-target="#requirements">Requirements</a></li>
@@ -203,10 +204,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<section id="simpolar" class="level2">
+<h2 class="anchored" data-anchor-id="simpolar">SimPolar</h2>
+<hr>
+</section>
 <section id="s3-tools" class="level2">
 <h2 class="anchored" data-anchor-id="s3-tools">S3 Tools</h2>
 <p>The <strong>S3 Tools</strong> are a set of Python routines designed to provide convenient access to the <strong>SKA Simulated Skies (S3)</strong> simulations. They allow users to transform query results from the S3 databases into <strong>maps and spectral data cubes</strong> for further analysis. The S3 simulations were produced at the University of Oxford within the framework of the SKADS programme. Note that the website hosting these simulations is no longer accessible.</p>
-<hr>
 <section id="features" class="level3">
 <h3 class="anchored" data-anchor-id="features">Features</h3>
 <p>The S3 Tools allow users to:</p>
@@ -216,7 +220,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>build spectral data cubes</li>
 <li>combine several astrophysical components (HI, CO, continuum, Galactic emission, etc.)</li>
 </ul>
-<hr>
 </section>
 <section id="requirements" class="level3">
 <h3 class="anchored" data-anchor-id="requirements">Requirements</h3>
@@ -230,7 +233,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>Tkinter</code></li>
 </ul>
 <p>Standard Python modules such as <code>os</code>, <code>sys</code>, <code>math</code>, <code>time</code>, and <code>random</code> are also used.</p>
-<hr>
 </section>
 <section id="installation" class="level3">
 <h3 class="anchored" data-anchor-id="installation">Installation</h3>
@@ -247,7 +249,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ol>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> install.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The installation script checks the availability of the required Python packages and warns the user if some are missing.</p>
-<hr>
 </section>
 <section id="configuration" class="level3">
 <h3 class="anchored" data-anchor-id="configuration">Configuration</h3>
@@ -264,7 +265,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>Config/Config_Path.py</code></pre>
 <p>and set:</p>
 <pre><code>S3TOOLS_PATH = ~/S3Tools/</code></pre>
-<hr>
 </section>
 <section id="simulation-templates" class="level3">
 <h3 class="anchored" data-anchor-id="simulation-templates">Simulation Templates</h3>
@@ -281,7 +281,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>SAX_TEMPLATES_DIR</code></pre>
 <p>in <code>Config_Path.py</code>.</p>
 <p><em>If you have an older (predating March 2011) installation of these templates, you need to create a subdirectory named FITS/ into which FITS files for the templates will be placed. The original template files are ascii (under the ascii/ subdirectory) but they take a while to load into arrays, much longer than when read from FITS files. Consequently, when making SAX cubes, the script first looks for a FITS file, and uses that if it can find it. Otherwse, it uses the ascii file and takes the opportunity to convert it to FITS and save it under FITS/ for future use. The downside of that is that FITS files take up a much bigger disk space than ascii files.</em></p>
-<hr>
 </section>
 <section id="hi-templates-kapteyn-institute" class="level4">
 <h4 class="anchored" data-anchor-id="hi-templates-kapteyn-institute">HI templates (Kapteyn Institute)</h4>
@@ -294,7 +293,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ol>
 <pre><code>KAPTEYN_TEMPLATES_DIR</code></pre>
 <p>in <code>Config_Path.py</code>.</p>
-<hr>
 </section>
 <section id="continuum-templates-mpifr" class="level4">
 <h4 class="anchored" data-anchor-id="continuum-templates-mpifr">Continuum templates (MPIfR)</h4>
@@ -307,7 +305,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ol>
 <pre><code>MPIFR_TEMPLATES_DIR</code></pre>
 <p>in <code>Config_Path.py</code>.</p>
-<hr>
 </section>
 <section id="global-sky-model" class="level4">
 <h4 class="anchored" data-anchor-id="global-sky-model">Global Sky Model</h4>
@@ -321,7 +318,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>GSM_DIR</code></pre>
 <p>in <code>Config_Path.py</code>.</p>
 <p>Then compile the provided <code>gsm.f</code> file.</p>
-<hr>
 </section>
 <section id="epoch-of-reionization-model" class="level4">
 <h4 class="anchored" data-anchor-id="epoch-of-reionization-model">Epoch of Reionization model</h4>
@@ -334,17 +330,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ol>
 <pre><code>IST_EOR_TEMPLATES_DIR</code></pre>
 <p>in <code>Config_Path.py</code>.</p>
-<hr>
 </section>
 </section>
 <section id="testing-the-installation" class="level3">
 <h3 class="anchored" data-anchor-id="testing-the-installation">Testing the installation</h3>
-<p>A set of tests is available.</p>
-<p>Download:</p>
-<ul>
-<li><a href="http://astro.ens.fr/S3DATA/Tests.tgz">Tests.tgz</a></li>
-</ul>
-<p>These tests verify the generation of:</p>
+<p>A set of tests is available in the archive <a href="http://astro.ens.fr/S3DATA/Tests.tgz">Tests.tgz</a>. These tests verify the generation of:</p>
 <ul>
 <li>S3-SEX cubes</li>
 <li>S3-SAX cubes</li>
@@ -352,7 +342,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Galactic emission</li>
 <li>noise realizations</li>
 </ul>
-<hr>
 </section>
 <section id="documentation" class="level3">
 <h3 class="anchored" data-anchor-id="documentation">Documentation</h3>
@@ -360,7 +349,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><a href="files/software/S3/S3Tools.pdf">User guide (PDF)</a></li>
 <li><a href="files/software/S3/README">README</a></li>
 </ul>
-<hr>
 </section>
 <section id="notes" class="level3">
 <h3 class="anchored" data-anchor-id="notes">Notes</h3>
