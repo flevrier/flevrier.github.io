@@ -280,6 +280,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ol>
 <pre><code>SAX_TEMPLATES_DIR</code></pre>
 <p>in <code>Config_Path.py</code>.</p>
+<p><em>If you have an older (predating March 2011) installation of these templates, you need to create a subdirectory named FITS/ into which FITS files for the templates will be placed. The original template files are ascii (under the ascii/ subdirectory) but they take a while to load into arrays, much longer than when read from FITS files. Consequently, when making SAX cubes, the script first looks for a FITS file, and uses that if it can find it. Otherwse, it uses the ascii file and takes the opportunity to convert it to FITS and save it under FITS/ for future use. The downside of that is that FITS files take up a much bigger disk space than ascii files.</em></p>
 <hr>
 </section>
 <section id="hi-templates-kapteyn-institute" class="level4">
