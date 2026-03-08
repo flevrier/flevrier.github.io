@@ -1,0 +1,15 @@
+---
+title: "Outreach"
+toc: true
+---
+
+## Public Lectures
+
+### The Turbulent Interstellar Medium  
+**Public lecture**, Observatoire de Paris — 2024  
+
+📄 [Slides (PDF)](files/outreach/turbulent_ism_2024.pdf)
+
+Short description of the talk if you wish (optional).  
+For example: an introduction to the physics of the interstellar medium and how turbulence shapes star-forming clouds.
+
