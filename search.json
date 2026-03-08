@@ -60,21 +60,42 @@
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "Topics:\n\nstellar structure\nradiative processes\ninterstellar medium\n\nCourse notes"
+    "text": "In this introductory astrophysics course, which is an option of L3 (first year of the ENS curriculum), I cover the basics of astrophyical observations, radiative transfer, the structure and evolution of stars, compact objects, galaxies, and cosmology. The exercise sessions are currently supervised by Guillaume Vigoureux.\nPolycopié de cours  Moodle"
   },
   {
-    "objectID": "teaching.html#l3-astrophysics",
-    "href": "teaching.html#l3-astrophysics",
+    "objectID": "teaching.html#introduction-à-lastrophysique-l3-ens",
+    "href": "teaching.html#introduction-à-lastrophysique-l3-ens",
     "title": "Teaching",
     "section": "",
-    "text": "Topics:\n\nstellar structure\nradiative processes\ninterstellar medium\n\nCourse notes"
+    "text": "In this introductory astrophysics course, which is an option of L3 (first year of the ENS curriculum), I cover the basics of astrophyical observations, radiative transfer, the structure and evolution of stars, compact objects, galaxies, and cosmology. The exercise sessions are currently supervised by Guillaume Vigoureux.\nPolycopié de cours  Moodle"
   },
   {
-    "objectID": "teaching.html#m2-interstellar-medium",
-    "href": "teaching.html#m2-interstellar-medium",
+    "objectID": "teaching.html#statistical-physics-m1-suts",
+    "href": "teaching.html#statistical-physics-m1-suts",
     "title": "Teaching",
-    "section": "M2 Interstellar Medium",
-    "text": "M2 Interstellar Medium\nTopics:\n\nmolecular spectroscopy\nastrochemistry\nmolecular clouds"
+    "section": "Statistical physics (M1 SUTS)",
+    "text": "Statistical physics (M1 SUTS)\nThis course is intended as a self-contained introduction to the methods of statistical physics, that allow to derive properties of systems containing a very large number of particles from properties at the microscopic scale. I cover the fundamentals of statistical physics, the various statistical ensembles, the statistics of quantum gases and radiation, magnetism, the heat capacity of solids, transport phenomena, and kinetic theory. The exercise sessions are currently supervised by Aurélien Piluso, Jade Touresse, and Jonas Wehrung–Montpezat.\nPolycopié de cours  Moodle"
+  },
+  {
+    "objectID": "teaching.html#milieu-interstellaire-et-formation-des-étoiles-m2-aadc",
+    "href": "teaching.html#milieu-interstellaire-et-formation-des-étoiles-m2-aadc",
+    "title": "Teaching",
+    "section": "Milieu interstellaire et formation des étoiles (M2 AADC)",
+    "text": "Milieu interstellaire et formation des étoiles (M2 AADC)\nIn this course, I cover the physics of the various phases (ionized, atomic, and molecular) of interstellar gas, the properties of dust grains, the formation of stars, and their interaction with the interstellar medium.\nPolycopié de cours  Moodle"
+  },
+  {
+    "objectID": "teaching.html#radiation-and-matter-in-astrophysics-m2-irt",
+    "href": "teaching.html#radiation-and-matter-in-astrophysics-m2-irt",
+    "title": "Teaching",
+    "section": "Radiation and matter in astrophysics (M2 IRT)",
+    "text": "Radiation and matter in astrophysics (M2 IRT)\nRadiation is the principal messenger through which information about the physical state of astronomical objects may be gathered. From the very-low energy radio waves to high-energy gamma rays, the full electromagnetic spectrum may be explored from the ground or from space. Deciphering this physical information encoded in light requires understanding the processes by which radiation is emitted and how it propagates and interacts with matter along the way from sources to the observer. In this course, taught in collaboration with Benjamin Godard, we explore the fundamentals of radiative transfer, and learn how to interpret the observations of electromagnetic radiation.\nMoodle"
+  },
+  {
+    "objectID": "teaching.html#préparation-à-lagrégation-de-physique",
+    "href": "teaching.html#préparation-à-lagrégation-de-physique",
+    "title": "Teaching",
+    "section": "Préparation à l’agrégation de physique",
+    "text": "Préparation à l’agrégation de physique\nA siginificant part of my teaching activity is to supervise students preparing for the “agrégation” in physics. I oversee practical courses where students perform classical experiments in the various fields of physics, evaluate written and oral mocks, and teach a two-hour class on experimental uncertainties.\nIncertitudes expérimentales  Préparation à l’agrégation"
   },
   {
     "objectID": "index.html",
