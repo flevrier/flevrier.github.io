@@ -167,22 +167,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#s3-tools" id="toc-s3-tools" class="nav-link active" data-scroll-target="#s3-tools">S3 Tools</a></li>
+  <li><a href="#s3-tools" id="toc-s3-tools" class="nav-link active" data-scroll-target="#s3-tools">S3 Tools</a>
+  <ul class="collapse">
   <li><a href="#features" id="toc-features" class="nav-link" data-scroll-target="#features">Features</a></li>
   <li><a href="#requirements" id="toc-requirements" class="nav-link" data-scroll-target="#requirements">Requirements</a></li>
   <li><a href="#installation" id="toc-installation" class="nav-link" data-scroll-target="#installation">Installation</a></li>
   <li><a href="#configuration" id="toc-configuration" class="nav-link" data-scroll-target="#configuration">Configuration</a></li>
-  <li><a href="#simulation-templates" id="toc-simulation-templates" class="nav-link" data-scroll-target="#simulation-templates">Simulation Templates</a>
-  <ul class="collapse">
-  <li><a href="#hi-and-co-templates-oxford" id="toc-hi-and-co-templates-oxford" class="nav-link" data-scroll-target="#hi-and-co-templates-oxford">HI and CO templates (Oxford)</a></li>
-  <li><a href="#hi-templates-kapteyn-institute" id="toc-hi-templates-kapteyn-institute" class="nav-link" data-scroll-target="#hi-templates-kapteyn-institute">HI templates (Kapteyn Institute)</a></li>
-  <li><a href="#continuum-templates-mpifr" id="toc-continuum-templates-mpifr" class="nav-link" data-scroll-target="#continuum-templates-mpifr">Continuum templates (MPIfR)</a></li>
-  <li><a href="#global-sky-model" id="toc-global-sky-model" class="nav-link" data-scroll-target="#global-sky-model">Global Sky Model</a></li>
-  <li><a href="#epoch-of-reionization-model" id="toc-epoch-of-reionization-model" class="nav-link" data-scroll-target="#epoch-of-reionization-model">Epoch of Reionization model</a></li>
-  </ul></li>
+  <li><a href="#simulation-templates" id="toc-simulation-templates" class="nav-link" data-scroll-target="#simulation-templates">Simulation Templates</a></li>
   <li><a href="#testing-the-installation" id="toc-testing-the-installation" class="nav-link" data-scroll-target="#testing-the-installation">Testing the installation</a></li>
   <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
   <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -213,9 +208,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The <strong>S3 Tools</strong> are a set of Python routines designed to provide convenient access to the <strong>SKA Simulated Skies (S3)</strong> simulations. They allow users to transform query results from the S3 databases into <strong>maps and spectral data cubes</strong> for further analysis.</p>
 <p>The S3 simulations were produced at the University of Oxford within the framework of the SKADS programme.</p>
 <hr>
-</section>
-<section id="features" class="level2">
-<h2 class="anchored" data-anchor-id="features">Features</h2>
+<section id="features" class="level3">
+<h3 class="anchored" data-anchor-id="features">Features</h3>
 <p>The S3 Tools allow users to:</p>
 <ul>
 <li>read results from S3 database queries</li>
@@ -225,8 +219,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <hr>
 </section>
-<section id="requirements" class="level2">
-<h2 class="anchored" data-anchor-id="requirements">Requirements</h2>
+<section id="requirements" class="level3">
+<h3 class="anchored" data-anchor-id="requirements">Requirements</h3>
 <p>The software requires a standard scientific Python environment. Typical dependencies include:</p>
 <ul>
 <li><code>numpy</code></li>
@@ -239,8 +233,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Standard Python modules such as <code>os</code>, <code>sys</code>, <code>math</code>, <code>time</code>, and <code>random</code> are also used.</p>
 <hr>
 </section>
-<section id="installation" class="level2">
-<h2 class="anchored" data-anchor-id="installation">Installation</h2>
+<section id="installation" class="level3">
+<h3 class="anchored" data-anchor-id="installation">Installation</h3>
 <ol type="1">
 <li><p>Download the archive:</p>
 <ul>
@@ -256,8 +250,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The installation script checks the availability of the required Python packages and warns the user if some are missing.</p>
 <hr>
 </section>
-<section id="configuration" class="level2">
-<h2 class="anchored" data-anchor-id="configuration">Configuration</h2>
+<section id="configuration" class="level3">
+<h3 class="anchored" data-anchor-id="configuration">Configuration</h3>
 <p>Assume the tools are installed in</p>
 <pre><code>~/S3Tools/</code></pre>
 <p>with the following structure:</p>
@@ -273,11 +267,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>S3TOOLS_PATH = ~/S3Tools/</code></pre>
 <hr>
 </section>
-<section id="simulation-templates" class="level2">
-<h2 class="anchored" data-anchor-id="simulation-templates">Simulation Templates</h2>
+<section id="simulation-templates" class="level3">
+<h3 class="anchored" data-anchor-id="simulation-templates">Simulation Templates</h3>
 <p>Several astrophysical templates can be used with the S3 Tools.</p>
-<section id="hi-and-co-templates-oxford" class="level3">
-<h3 class="anchored" data-anchor-id="hi-and-co-templates-oxford">HI and CO templates (Oxford)</h3>
+<section id="hi-and-co-templates-oxford" class="level4">
+<h4 class="anchored" data-anchor-id="hi-and-co-templates-oxford">HI and CO templates (Oxford)</h4>
 <p>Templates for HI and CO emission of galaxies developed by <strong>Danail Obreschkow</strong>.</p>
 <p>Steps:</p>
 <ol type="1">
@@ -289,8 +283,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>in <code>Config_Path.py</code>.</p>
 <hr>
 </section>
-<section id="hi-templates-kapteyn-institute" class="level3">
-<h3 class="anchored" data-anchor-id="hi-templates-kapteyn-institute">HI templates (Kapteyn Institute)</h3>
+<section id="hi-templates-kapteyn-institute" class="level4">
+<h4 class="anchored" data-anchor-id="hi-templates-kapteyn-institute">HI templates (Kapteyn Institute)</h4>
 <p>HI galaxy templates developed by <strong>Rense Boomsma</strong>.</p>
 <p>Steps:</p>
 <ol type="1">
@@ -302,8 +296,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>in <code>Config_Path.py</code>.</p>
 <hr>
 </section>
-<section id="continuum-templates-mpifr" class="level3">
-<h3 class="anchored" data-anchor-id="continuum-templates-mpifr">Continuum templates (MPIfR)</h3>
+<section id="continuum-templates-mpifr" class="level4">
+<h4 class="anchored" data-anchor-id="continuum-templates-mpifr">Continuum templates (MPIfR)</h4>
 <p>Templates for radio continuum emission in Stokes <strong>I, Q, U</strong> developed by <strong>Tigran Arshakian</strong>.</p>
 <p>Steps:</p>
 <ol type="1">
@@ -315,8 +309,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>in <code>Config_Path.py</code>.</p>
 <hr>
 </section>
-<section id="global-sky-model" class="level3">
-<h3 class="anchored" data-anchor-id="global-sky-model">Global Sky Model</h3>
+<section id="global-sky-model" class="level4">
+<h4 class="anchored" data-anchor-id="global-sky-model">Global Sky Model</h4>
 <p>Galactic emission model based on the work of <strong>de Oliveira-Costa et al.&nbsp;(2008)</strong>.</p>
 <p>Steps:</p>
 <ol type="1">
@@ -329,8 +323,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Then compile the provided <code>gsm.f</code> file.</p>
 <hr>
 </section>
-<section id="epoch-of-reionization-model" class="level3">
-<h3 class="anchored" data-anchor-id="epoch-of-reionization-model">Epoch of Reionization model</h3>
+<section id="epoch-of-reionization-model" class="level4">
+<h4 class="anchored" data-anchor-id="epoch-of-reionization-model">Epoch of Reionization model</h4>
 <p>Simulations of the EoR signal produced by <strong>Mario Santos</strong>.</p>
 <p>Steps:</p>
 <ol type="1">
@@ -343,8 +337,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <hr>
 </section>
 </section>
-<section id="testing-the-installation" class="level2">
-<h2 class="anchored" data-anchor-id="testing-the-installation">Testing the installation</h2>
+<section id="testing-the-installation" class="level3">
+<h3 class="anchored" data-anchor-id="testing-the-installation">Testing the installation</h3>
 <p>A set of tests is available.</p>
 <p>Download:</p>
 <ul>
@@ -360,19 +354,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <hr>
 </section>
-<section id="documentation" class="level2">
-<h2 class="anchored" data-anchor-id="documentation">Documentation</h2>
+<section id="documentation" class="level3">
+<h3 class="anchored" data-anchor-id="documentation">Documentation</h3>
 <ul>
 <li><a href="files/software/S3Tools.pdf">User guide (PDF)</a></li>
 <li><a href="files/software/README">README</a></li>
 </ul>
 <hr>
 </section>
-<section id="notes" class="level2">
-<h2 class="anchored" data-anchor-id="notes">Notes</h2>
+<section id="notes" class="level3">
+<h3 class="anchored" data-anchor-id="notes">Notes</h3>
 <p>A major bug affecting the line widths of SAX sources was corrected in March 2012. Users with older versions should rebuild their cubes using the updated version.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
