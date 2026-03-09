@@ -17,7 +17,7 @@ jobs:
       - uses: quarto-dev/quarto-actions/setup@v2
 
       - name: install python deps
-        run: pip install requests bibtexparser
+        run: pip install requests bibtexparser pylatexenc
 
       - name: generate latest publication json
         run: python scripts/latest_from_bib.py
