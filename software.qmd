@@ -1,0 +1,197 @@
+---
+title: "Software"
+---
+
+## SimPolar
+
+SimPolar is a set of routines to build simulated polarized thermal dust emission maps from MHD cubes, at any given frequency. They are available [here](files/Software/SimPolar/Routines.zip) but do not come with documentation yet, so contact me if you need help.
+
+---
+
+## S3 Tools
+
+::: {.callout-warning}
+## Warning to users
+
+⚠️ This software was developed more than a decade ago for the **SKA Simulated Skies (S3)** simulations produced at the University of Oxford within the framework of the SKADS programme. The website hosting these simulations is no longer accessible, and this software is **most likely obsolete** and may not work with modern Python environments.
+It is kept here **for archival purposes only**.
+:::
+
+The **S3 Tools** are a set of Python routines designed to provide convenient access to the **SKA Simulated Skies (S3)** simulations. They allow users to transform query results from the S3 databases into **maps and spectral data cubes** for further analysis.
+
+### Features
+
+The S3 Tools allow users to:
+
+* read results from S3 database queries
+* generate simulated radio maps
+* build spectral data cubes
+* combine several astrophysical components (HI, CO, continuum, Galactic emission, etc.)
+
+### Documentation
+
+* [User guide (PDF)](files/software/S3/S3Tools.pdf)
+* [README](files/software/S3/README)
+
+### Requirements
+
+The software requires a standard scientific Python environment.
+Typical dependencies include:
+
+* `numpy`
+* `scipy`
+* `matplotlib`
+* `pyfits`
+* `PIL`
+* `Tkinter`
+
+Standard Python modules such as `os`, `sys`, `math`, `time`, and `random` are also used.
+
+### Installation
+
+1. Download the archive:
+
+   * [S3Tools.tgz](files/software/S3/S3Tools.tgz)
+
+2. Uncompress the archive:
+
+```bash
+tar xzf S3Tools.tgz
+```
+
+3. Run the installation script:
+
+```bash
+python install.py
+```
+
+The installation script checks the availability of the required Python packages and warns the user if some are missing.
+
+### Configuration
+
+Assume the tools are installed in
+
+```
+~/S3Tools/
+```
+
+with the following structure:
+
+```
+S3Tools/
+  Config/
+  Doc/
+  Output/
+  Routines/
+  Tmp/
+```
+
+You should edit the file
+
+```
+Config/Config_Path.py
+```
+
+and set:
+
+```
+S3TOOLS_PATH = ~/S3Tools/
+```
+
+### Simulation Templates
+
+Several astrophysical templates can be used with the S3 Tools.
+
+#### HI and CO templates (Oxford)
+
+Templates for HI and CO emission of galaxies developed by **Danail Obreschkow**.
+
+Steps:
+
+1. Download [SAX_templates.tgz](https://drive.google.com/open?id=0B2vciAlhwY9-R1FMc0dMTEJWN0k)
+2. Extract the archive
+3. Set
+
+```
+SAX_TEMPLATES_DIR
+```
+
+in `Config_Path.py`.
+
+*If you have an older (predating March 2011) installation of these templates, you need to create a subdirectory named FITS/ into which FITS files for the templates will be placed. The original template files are ascii (under the ascii/ subdirectory) but they take a while to load into arrays, much longer than when read from FITS files. Consequently, when making SAX cubes, the script first looks for a FITS file, and uses that if it can find it. Otherwse, it uses the ascii file and takes the opportunity to convert it to FITS and save it under FITS/ for future use. The downside of that is that FITS files take up a much bigger disk space than ascii files.*
+
+#### HI templates (Kapteyn Institute)
+
+HI galaxy templates developed by **Rense Boomsma**.
+
+Steps:
+
+1. Download [KI_templates.tgz](https://drive.google.com/open?id=0B2vciAlhwY9-M1VuUUxwRnZ3TlE)
+2. Extract the archive
+3. Set
+
+```
+KAPTEYN_TEMPLATES_DIR
+```
+
+in `Config_Path.py`.
+
+#### Continuum templates (MPIfR)
+
+Templates for radio continuum emission in Stokes **I, Q, U** developed by **Tigran Arshakian**.
+
+Steps:
+
+1. Download [MPIFR.tgz](https://drive.google.com/file/d/1ZV99nLOlUUS0BtD8AWt-04NrIV8AGgUn)
+2. Extract the archive
+3. Set
+
+```
+MPIFR_TEMPLATES_DIR
+```
+
+in `Config_Path.py`.
+
+#### Global Sky Model
+
+Galactic emission model based on the work of **de Oliveira-Costa et al. (2008)**.
+<BR>
+*Note that this is now superseded by [PyGDSM](https://github.com/telegraphic/pygdsm)*
+
+Steps:
+
+1. Download the GSM package 
+2. Extract it
+3. Set
+
+```
+GSM_DIR
+```
+
+in `Config_Path.py`.
+
+Then compile the provided `gsm.f` file.
+
+#### Epoch of Reionization model
+
+Simulations of the EoR signal produced by **Mario Santos**.
+
+Steps:
+
+1. Download [EoR-Lisbon.tgz](https://drive.google.com/open?id=0B2vciAlhwY9-WVI3SXMyOHF6cVU)
+2. Extract it
+3. Set
+
+```
+IST_EOR_TEMPLATES_DIR
+```
+
+in `Config_Path.py`.
+
+
+<!-- 
+### Notes
+
+A major bug affecting the line widths of SAX sources was corrected in March 2012.
+Users with older versions should rebuild their cubes using the updated version.
+ -->
