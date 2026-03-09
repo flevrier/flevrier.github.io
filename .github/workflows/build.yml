@@ -1,6 +1,8 @@
 name: build-site
 
 on:
+  push:
+    branches: main
   schedule:
     - cron: "0 3 * * *"
   workflow_dispatch:
@@ -27,3 +29,5 @@ jobs:
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
