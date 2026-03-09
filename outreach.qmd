@@ -13,3 +13,71 @@ toc: true
 Short description of the talk if you wish (optional).  
 For example: an introduction to the physics of the interstellar medium and how turbulence shapes star-forming clouds.
 
+
+---
+
+### Magnetic Fields in the Galaxy  
+**Public lecture**, Nuit de la Science — 2023  
+
+📄 [Slides (PDF)](files/outreach/magnetic_fields_galaxy.pdf)
+
+A presentation on the role of magnetic fields in the structure and evolution of the interstellar medium.
+
+---
+
+## Conferences for a General Audience
+
+### How Stars Are Born  
+**Public conference**, Université PSL — 2022  
+
+📄 [Slides (PDF)](files/outreach/star_formation_public.pdf)
+
+Overview of star formation processes in molecular clouds.
+
+---
+
+### The Structure of the Interstellar Medium  
+**Seminar**, Science festival — 2021  
+
+📄 [Slides (PDF)](files/outreach/ism_structure_public.pdf)
+
+---
+
+## Teaching / Pedagogical Presentations
+
+### Turbulence in Astrophysics  
+**Pedagogical lecture**, ENS — 2023  
+
+📄 [Slides (PDF)](files/outreach/turbulence_teaching.pdf)
+
+---
+
+## Media and Public Engagement
+
+- Interview on interstellar turbulence — *Radio program*, 2023  
+- Public round table on astronomy — *Science Festival*, 2022
+
+---
+
+## Notes
+
+Most slides are in **PDF format** and are intended for a **general audience**.  
+Some content may overlap with academic lectures or conference material.
+
+## Public Talks
+
+- **The Turbulent Interstellar Medium**  
+  Observatoire de Paris, 2024  
+  📄 [Slides](files/outreach/turbulent_ism_2024.pdf)
+
+- **Magnetic Fields in the Galaxy**  
+  Nuit de la Science, 2023  
+  📄 [Slides](files/outreach/magnetic_fields_galaxy.pdf)
+
+- **How Stars Are Born**  
+  Université PSL, 2022  
+  📄 [Slides](files/outreach/star_formation_public.pdf)
+
+::: {.callout-note icon="megaphone"}
+These talks are intended for a **general audience** and require no prior background in astrophysics.
+:::

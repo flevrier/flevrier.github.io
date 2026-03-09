@@ -1,7 +1,57 @@
 ---
 title: "Curriculum Vitae"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    number-sections: false
 ---
 
-Download full CV:
+## Positions
 
-[PDF version](files/cv_levrier.pdf)
+### Since September 2024
+**Professor at École Normale Supérieure, Paris**
+
+### September 2008 – August 2024
+**Associate Professor (Maître de conférences), École Normale Supérieure, Paris**
+
+### August 2007 – August 2008
+**Postdoctoral Researcher — University of Oxford (UK)**  
+European programme SKADS (Square Kilometer Array Design Studies) 
+<BR>
+Supervisor: S. Rawlings
+
+### September 2004 – June 2007 and September 2009 – June 2010
+**Oral examiner (CPGE, MPSI track)**  
+Lycée Janson-de-Sailly, Paris
+
+### September 2003 – July 2007
+**Agrégé-préparateur (AGPR)**  
+École Normale Supérieure, Paris
+
+### September 2000 – June 2003
+**Teaching assistant (Moniteur)**  
+Université Paris VII Denis Diderot
+
+
+## Research Training
+
+### 2016 — Habilitation à diriger des recherches (HDR)
+**Observatoire de Paris**
+
+**Title:**  
+*The dynamical and magnetized interstellar medium*
+<BR>
+[Manuscript](files/Education/HDR-Levrier.pdf)
+
+**Committee:** H. Sol, R. Lallement, D. Rigopoulou, M. Houde, F. Boulanger, J. Devriendt, D. Falceta-Gonçalves, T. Troland
+
+### 2000 – 2004 — PhD
+**Université Paris VII Denis Diderot**
+
+**Title:**
+*Disorder and coherence in interstellar medium structures: statistical analysis, interferometric filtering, and radiative transfer*
+<BR>
+[Manuscript](files/Education/PhD-Levrier.pdf)
+
+**Supervisors:** E. Falgarone (ENS Paris) & F. Viallefond (Observatoire de Paris)

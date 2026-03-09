@@ -19,5 +19,11 @@
   },
   "cv.qmd": {
     "cv.html": "32b9b256"
+  },
+  "software.qmd": {
+    "software.html": "86a7dcfe"
+  },
+  "outreach.qmd": {
+    "outreach.html": "1c5a6af5"
   }
 }

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Home – François Levrier</title>
+<title>François Levrier</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -97,10 +97,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
-<span class="menu-text">Research</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
@@ -113,7 +109,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Students</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./software.qmd"> 
+    <a class="nav-link" href="./outreach.html"> 
+<span class="menu-text">Outreach</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./software.html"> 
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
@@ -128,33 +128,23 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#françois-levrier" id="toc-françois-levrier" class="nav-link active" data-scroll-target="#françois-levrier">François Levrier</a>
-  <ul class="collapse">
-  <li><a href="#research-interests" id="toc-research-interests" class="nav-link" data-scroll-target="#research-interests">Research interests</a></li>
-  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Home</h1>
+<h1 class="title">François Levrier</h1>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -166,31 +156,177 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="françois-levrier" class="level2">
-<h2 class="anchored" data-anchor-id="françois-levrier">François Levrier</h2>
-<p>Professor of Astrophysics<br>
-Laboratoire de Radioastronomie<br>
-École Normale Supérieure, Paris</p>
-<section id="research-interests" class="level3">
-<h3 class="anchored" data-anchor-id="research-interests">Research interests</h3>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><img src="images/FrancoisLevrier.jpg" style="width:200px; border-radius:8px;"></p>
+<div style="font-size:0.85em; line-height:1.4;">
+Astrophysics team
+</div>
+<div style="font-size:0.85em; line-height:1.4;">
+Room HL102A
+</div>
+<div style="font-size:0.85em; line-height:1.4;">
++33 1 44 32 39 93
+</div>
+<div style="font-size:0.85em; line-height:1.4;">
+francois.levrier@ens.fr
+</div>
+<p><a href="https://www.lpens.ens.psl.eu/">LPENS</a> - <a href="https://www.ens.psl.eu/">ENS</a> - <a href="https://psl.eu/">PSL</a></p>
+<p><img src="images/ads.svg" width="22"> <a href="https://ui.adsabs.harvard.edu/search/p_=0&amp;q=author%3A(%22levrier%2C%20f%22)&amp;sort=date%20desc%2C%20bibcode%20desc">NASA ADS</a> <br> <img src="images/GS.png" width="22"> <a href="https://scholar.google.com/citations?hl=en&amp;user=LG1x7ZIAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Google Scholar</a></p>
+<p><i class="bi bi-bluesky"></i> <a href="https://bsky.app/profile/francoislevrier.bsky.social">Bluesky</a> <br> <i class="bi bi-twitter"></i> <a href="https://twitter.com/FrancoisLevrier">Twitter</a></p>
+<div id="bluesky">
+<p>Loading latest Bluesky post…</p>
+</div>
+<script>
+
+const handle = "francoislevrier.bsky.social";
+
+async function getPostToDisplay() {
+
+  const feed = await fetch(
+    `https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=${handle}&limit=1`
+  ).then(r => r.json());
+
+  let item = feed.feed[0];
+  let uri = item.post.uri;
+
+  // Si le post est une réponse dans un thread
+  if (item.post.record.reply) {
+
+    const thread = await fetch(
+      `https://public.api.bsky.app/xrpc/app.bsky.feed.getPostThread?uri=${uri}&depth=10`
+    ).then(r => r.json());
+
+    // remonter au post racine
+    let root = thread.thread;
+    while (root.parent) {
+      root = root.parent;
+    }
+
+    return root.post;
+
+  }
+
+  return item.post;
+}
+
+getPostToDisplay().then(post => {
+
+  const record = post.record;
+  const text = record.text;
+  const date = new Date(record.createdAt).toLocaleDateString();
+
+  const rkey = post.uri.split("/").pop();
+  const postUrl = `https://bsky.app/profile/${handle}/post/${rkey}`;
+
+  let imageHTML = "";
+
+  if (post.embed && post.embed.images) {
+    const img = post.embed.images[0].fullsize;
+    imageHTML = `<img src="${img}" style="max-width:95%;margin-top:8px;border-radius:6px;">`;
+  }
+
+  document.getElementById("bluesky").innerHTML = `
+
+<div style="border-left:4px solid #1185fe;padding-left:12px">
+
+<p style="max-width:95%; font-size:0.85em; line-height:1.35;">${text}</p>
+
+${imageHTML}
+
+<p style="font-size:0.8em;color:gray">
+${date} — <a href="${postUrl}" target="_blank">view on Bluesky</a>
+</p>
+
+</div>
+`;
+
+})
+.catch(err => {
+  document.getElementById("bluesky").innerHTML =
+  "Bluesky feed unavailable.";
+});
+
+</script>
+</div><div class="column" style="width:70%;">
+<p>I am a professor of astrophysics in the <a href="https://www.phys.ens.fr/fr">Physics Department</a> of <a href="https://www.ens.psl.eu/">Ecole Normale Supérieure</a>.</p>
+<p>My research focuses on the structure and dynamics of the interstellar medium, from the diffuse regions to dense molecular clouds where stars are born, using methods imported from data science at the interface between observations and simulations.</p>
+<p>Together with <a href="https://www.lcpq.ups-tlse.fr/spip.php?article1130">Aude Simon</a> I coordinate the “Action Thématique” <a href="https://www.pcmi.cnrs.fr/">PCMI</a> (“Physique et Chimie du Milieu Interstellaire”) of <a href="https://www.cnrs.fr/fr">CNRS</a> <a href="https://www.insu.cnrs.fr/fr">“Terre &amp; Univers”</a>.</p>
+<p>I teach at various levels, from L3 to M2, from general physics to my field of expertise, and I am co-head of the <a href="https://ufe.obspm.fr/formations/master/master-2-suts-parcours-aadc/">Master AADC</a>.</p>
+<hr>
+<section id="latest-publication" class="level2">
+<h2 class="anchored" data-anchor-id="latest-publication">Latest publication</h2>
+<div id="latest-paper" class="pub-card">
+
+</div>
+<script>
+fetch("latest.json")
+  .then(r => r.json())
+  .then(d => {
+    document.getElementById("latest-paper").innerHTML = `
+      <div class="card">
+        <h3><strong>${d.title}</strong></h3>
+        <p class="authors"><em>${d.authors}</em> (${d.year})</p>
+        <p class="links">
+          ${d.ads ? `<a href="${d.ads}" target="_blank">ADS</a>` : ""}
+          ${d.arxiv ? ` | <a href="${d.arxiv}" target="_blank">arXiv</a>` : ""}
+          ${d.pdf ? ` | <a href="${d.pdf}" target="_blank">PDF</a>` : ""}
+        </p>
+      </div>
+    `;
+  })
+  .catch(err => {
+    console.error("Could not load latest publication", err);
+  });
+</script>
+<hr>
+</section>
+<section id="lecture-notes" class="level2">
+<h2 class="anchored" data-anchor-id="lecture-notes">Lecture notes</h2>
 <ul>
-<li>Interstellar medium</li>
-<li>Molecular clouds</li>
-<li>Radiative transfer</li>
-<li>Astrochemical processes</li>
+<li><a href="files/Teaching/Polycopie-L3-Astrophysique-2025.pdf">Introduction à l’astrophysique</a> (L3 ENS) <img src="images/fr.svg" class="img-fluid" width="20"></li>
+<li><a href="files/Teaching/Statistical-Physics-2025-2026.pdf">Statistical physics</a> (M1 SUTS) <img src="images/uk.svg" class="img-fluid" width="20"></li>
+<li><a href="files/Teaching/T07-2025-2026-Complet.pdf">Milieu interstellaire et formation des étoiles</a> (M2 AADC) <img src="images/fr.svg" class="img-fluid" width="20"></li>
+<li><a href="files/Teaching/Incertitudes-2025-2026.pdf">Incertitudes expérimentales</a> (Préparation à l’agrégation de physique) <img src="images/fr.svg" class="img-fluid" width="20"></li>
 </ul>
+<hr>
+<div id="apod">
+
+</div>
+<script>
+fetch("https://api.nasa.gov/planetary/apod?api_key=Ou5foa1QNKulBvRHkdQNLnTXz8pjwCcMP2de7ayf")
+.then(r => r.json())
+.then(d => {
+
+document.getElementById("apod").innerHTML = `
+<h3>Astronomy Picture of the Day: ${d.title}</h3>
+
+<div style="display:flex; gap:20px; align-items:flex-start;">
+
+  <img src="${d.url}" style="max-width:320px; height:auto;">
+
+  <div style="font-size:0.85em; line-height:1.4;">
+    ${d.explanation}
+  </div>
+
+</div>
+`;
+
+});
+</script>
+<hr>
+<iframe src="https://calendar.google.com/calendar/embed?src=ZnJhbmNvaXMubGV2cmllckBnbWFpbC5jb20" style="border:0" width="600" height="400" frameborder="0" scrolling="no">
+</iframe>
 </section>
-<section id="contact" class="level3">
-<h3 class="anchored" data-anchor-id="contact">Contact</h3>
-<p>Laboratoire de Radioastronomie<br>
-ENS Paris</p>
-<p>Email: francois.levrier@ens.fr— title: “Website” —</p>
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+</div>
+</div>
+<hr>
+<div id="quote">
+
+</div>
+<script src="quotes.js"></script>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -266,7 +402,7 @@ ENS Paris</p>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/flevrier\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

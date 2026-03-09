@@ -7,21 +7,26 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: research.qmd
-        text: Research
       - href: publications.qmd
         text: Publications
       - href: teaching.qmd
         text: Teaching
       - href: students.qmd
         text: Students
+      - href: outreach.qmd
+        text: Outreach
       - href: software.qmd
         text: Software
       - href: cv.qmd
-        text: CV
+        text: CV 
 
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
+    citations-hover: true
+
+resources:
+  - files/**
+  - latest.json

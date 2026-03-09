@@ -4,8 +4,165 @@ title: "Students"
 
 ## PhD Students
 
-- Name – thesis topic – year
+**Pablo Richard**  
+Statistical study of the non-Gaussian structures of the turbulent ISM in a low observational data regime
+<BR>
+*2021–2024 [Defended on October 14, 2024]*
+<BR>
+[Thesis](files/Students/These-PR.pdf)
 
-## Master Students
+**Clément Walter**  
+Exploring Galactic CO emission with Planck data : Methodology and new full-sky maps
+<BR>
+*2019–2023 [Defended on July 3, 2023]*
+<BR>
+[Thesis](files/Students/These-CW.pdf)
 
-- Name – project – year
+**Bruno Régaldo-Saint Blancard**  
+Statistical modeling of the polarized emission of interstellar dust
+<BR>
+*2018–2021 [Defended on November 2, 2021]*
+<BR>
+[Thesis](https://theses.hal.science/tel-03600846)
+
+**Manuel Berthet**  
+The magnetic filamentary web of the interstellar medium
+<BR>
+*2013–2017 [Unfinished]*
+
+## M2 Students
+
+**Louise Marinho**
+<BR>
+Application des outils WST/WPH à l’émission moléculaire dans le nuage d’Orion B
+<BR>
+*2021 [3 months]*
+<BR>
+[Report](files/Students/M2-Marinho.pdf)
+
+**Arsène Ferrière**
+<BR>
+Application des outils WST/WPH pour la comparaison entre observations, simulations, et modèles de l’émission des poussières
+<BR>
+*2021 [1 month]*
+
+**Thi Kim Ha Nguyen**
+<BR>
+Application des outils WST à l’émission moléculaire dans le nuage d’Orion B
+<BR>
+*2020 [3 months]*
+<BR>
+[Report](files/Students/M2-Nguyen.pdf)
+
+**Bruno Régaldo-Saint Blancard**
+<BR>
+Application des outils WST pour l’analyse d’observations de l’émission thermique des poussières
+<BR>
+*2018 [3 months]*
+<BR>
+[Report](files/Students/M2-Regaldo.pdf)
+
+**Bilal Ladjelate**
+<BR>
+Modèles de la structure physico-chimique des nuages moléculaires interstellaires
+<BR>
+*2013 [2 months]*
+<BR>
+[Report](files/Students/M2-Ladjelate.pdf)
+
+**Manuel Berthet**
+<BR>
+Les statistiques d’orientation des filaments et du champ magnétique dans le milieu interstellaire diﬀus
+<BR>
+*2012 [2 months]*
+<BR>
+[Report](files/Students/M2-Berthet.pdf)
+
+**Rémi Paulin**
+<BR>
+Le temps de vie des nuages interstellaires
+<BR>
+*2011 [2 months]*
+<BR>
+[Report](files/Students/M2-Paulin.pdf)
+
+## M1 Students
+
+**Antoine Maby**
+<BR>
+Développement d’un code numérique d’analyse des mesures de polarisation interstellaire
+<BR>
+*2017 [6 weeks]*
+<BR>
+[Report](files/Students/M1-Maby.pdf)
+
+**Brice Poillot**
+<BR>
+Développement de simulations extragalactiques pour SKA
+<BR>
+*2011 [1 month]*
+<BR>
+[Report](files/Students/M1-Poillot.pdf)
+
+## L3 Students
+
+**Gabriel Louédin**
+<BR>
+Etude morphologique de simulations numériques du milieu interstellaire turbulent multi-phasique.
+<BR>
+*2023 [6 months]*
+<BR>
+[Report](files/Students/L3-Louedin.pdf)
+
+**Mélissa Faur**
+<BR>
+Modélisation et analyse des observations Planck, prévisions pour la mission LiteBIRD
+<BR>
+*2020 [1 month]*
+<BR>
+[Report](files/Students/L3-Faur.pdf)
+
+**Tarik Beldjilali & Bachir Hassaine**
+<BR>
+Emission thermique des poussières Galactiques
+<BR>
+*2017 [1 week]*
+
+## L2 Students
+
+**Alexandre Loze**
+<BR>
+Analyse statistique des structures interstellaires
+<BR>
+*2026 [4 months, half-a-day per week]*
+
+**Charlotte Cany**
+<BR>
+Modélisation et analyse des observations Planck, prévisions pour la mission LiteBIRD
+<BR>
+*2022 [4 months, half-a-day per week]*
+<BR>
+[Report](files/Students/L2-Cany.pdf)
+
+## ENS Tutoring
+
+Oles Bilobrov, Camille Gubeno, Lahna Admeziem, Emma Bierlaire, Perrine Dupont, Victor Botez, Geoffroy Morlat, Jean Sternberg, Alexandre Prieur, Vincent Deloupy, Valentina Richard Romei, Alice Maurel, Elie Olivier, Edwan Préau, Samuel Zouari, [Jordan Philidet](https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&q=%20author%3A%22philidet%2C%20j%22&sort=date%20desc%2C%20bibcode%20desc&p_=0), Paul Caucal, Félix Driencourt-Mangin, Pierre Mourier, Tommy Dessup, Jérôme Gleyzes, Thibaut Castan, [Sandrine Codis](https://sandrinecodis.wixsite.com/sandrinewebsite), Rémi Paulin, [Quentin Kral](https://ui.adsabs.harvard.edu/search/q=author%3A%22Kral%2C%20Quentin%22&sort=date%20desc%2C%20bibcode%20desc&p_=0).
+
+## Middle- and high-school interns
+
+*2026* : Lila Mekkeri
+<BR>
+*2025* : Lou Brumauld, Elisa Lemonnier, Flora Roest Crollius
+<BR>
+*2024* : Lucie Langet, Lyna Ould-Hocine, Ilan Amghar, Enzo Liu
+<BR> 
+*2022* : Mélina Reynaud-Bouret
+<BR>
+*2019* : Azadée Trilles-Damamme
+<BR>
+*2018* : Anako Jeannin-Mallet
+<BR>
+
+
+
+

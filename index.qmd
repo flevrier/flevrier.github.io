@@ -1,29 +1,196 @@
 ---
-title: "Home"
+title: "François Levrier"
+page-layout: full
 ---
 
-## François Levrier
+::: {.columns}
 
-Professor of Astrophysics  
-Laboratoire de Radioastronomie  
-École Normale Supérieure, Paris
+::: {.column width="30%"}
 
-### Research interests
+<img src="images/FrancoisLevrier.jpg" style="width:200px; border-radius:8px;">
 
-- Interstellar medium
-- Molecular clouds
-- Radiative transfer
-- Astrochemical processes
+<div style="font-size:0.85em; line-height:1.4;">Astrophysics team</div>
+<div style="font-size:0.85em; line-height:1.4;">Room HL102A</div>
+<div style="font-size:0.85em; line-height:1.4;">+33 1 44 32 39 93</div>
+<div style="font-size:0.85em; line-height:1.4;">francois.levrier@ens.fr</div>
 
-### Contact
+[LPENS](https://www.lpens.ens.psl.eu/) - [ENS](https://www.ens.psl.eu/) - [PSL](https://psl.eu/)
 
-Laboratoire de Radioastronomie  
-ENS Paris
 
-Email: francois.levrier@ens.fr---
-title: "Website"
+<img src="images/ads.svg" width="22"> [NASA ADS](https://ui.adsabs.harvard.edu/search/p_=0&q=author%3A(%22levrier%2C%20f%22)&sort=date%20desc%2C%20bibcode%20desc)
+<BR>
+<img src="images/GS.png" width="22"> [Google Scholar](https://scholar.google.com/citations?hl=en&user=LG1x7ZIAAAAJ&view_op=list_works&sortby=pubdate)  
+
+
+<i class="bi bi-bluesky"></i> [Bluesky](https://bsky.app/profile/francoislevrier.bsky.social)
+<BR>
+<i class="bi bi-twitter"></i> [Twitter](https://twitter.com/FrancoisLevrier) 
+
+<div id="bluesky">
+Loading latest Bluesky post...
+</div>
+
+<script>
+
+const handle = "francoislevrier.bsky.social";
+
+async function getPostToDisplay() {
+
+  const feed = await fetch(
+    `https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=${handle}&limit=1`
+  ).then(r => r.json());
+
+  let item = feed.feed[0];
+  let uri = item.post.uri;
+
+  // Si le post est une réponse dans un thread
+  if (item.post.record.reply) {
+
+    const thread = await fetch(
+      `https://public.api.bsky.app/xrpc/app.bsky.feed.getPostThread?uri=${uri}&depth=10`
+    ).then(r => r.json());
+
+    // remonter au post racine
+    let root = thread.thread;
+    while (root.parent) {
+      root = root.parent;
+    }
+
+    return root.post;
+
+  }
+
+  return item.post;
+}
+
+getPostToDisplay().then(post => {
+
+  const record = post.record;
+  const text = record.text;
+  const date = new Date(record.createdAt).toLocaleDateString();
+
+  const rkey = post.uri.split("/").pop();
+  const postUrl = `https://bsky.app/profile/${handle}/post/${rkey}`;
+
+  let imageHTML = "";
+
+  if (post.embed && post.embed.images) {
+    const img = post.embed.images[0].fullsize;
+    imageHTML = `<img src="${img}" style="max-width:95%;margin-top:8px;border-radius:6px;">`;
+  }
+
+  document.getElementById("bluesky").innerHTML = `
+
+<div style="border-left:4px solid #1185fe;padding-left:12px">
+
+<p style="max-width:95%; font-size:0.85em; line-height:1.35;">${text}</p>
+
+${imageHTML}
+
+<p style="font-size:0.8em;color:gray">
+${date} — <a href="${postUrl}" target="_blank">view on Bluesky</a>
+</p>
+
+</div>
+`;
+
+})
+.catch(err => {
+  document.getElementById("bluesky").innerHTML =
+  "Bluesky feed unavailable.";
+});
+
+</script>
+
+:::
+
+::: {.column width="70%"}
+
+I am a professor of astrophysics in the [Physics Department](https://www.phys.ens.fr/fr) of [Ecole Normale Supérieure](https://www.ens.psl.eu/). 
+
+My research focuses on the structure and dynamics of the interstellar medium, from the diffuse regions to dense molecular clouds where stars are born, using methods imported from data science at the interface between observations and simulations. 
+
+Together with [Aude Simon](https://www.lcpq.ups-tlse.fr/spip.php?article1130) I coordinate the "Action Thématique" [PCMI](https://www.pcmi.cnrs.fr/) ("Physique et Chimie du Milieu Interstellaire") of [CNRS](https://www.cnrs.fr/fr) ["Terre & Univers"](https://www.insu.cnrs.fr/fr).
+
+I teach at various levels, from L3 to M2, from general physics to my field of expertise, and I am co-head of the [Master AADC](https://ufe.obspm.fr/formations/master/master-2-suts-parcours-aadc/).
+
 ---
 
-This is a Quarto website.
+## Latest publication
+<div id="latest-paper" class="pub-card"></div>
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+<script>
+fetch("latest.json")
+  .then(r => r.json())
+  .then(d => {
+    document.getElementById("latest-paper").innerHTML = `
+      <div class="card">
+        <h3><strong>${d.title}</strong></h3>
+        <p class="authors"><em>${d.authors}</em> (${d.year})</p>
+        <p class="links">
+          ${d.ads ? `<a href="${d.ads}" target="_blank">ADS</a>` : ""}
+          ${d.arxiv ? ` | <a href="${d.arxiv}" target="_blank">arXiv</a>` : ""}
+          ${d.pdf ? ` | <a href="${d.pdf}" target="_blank">PDF</a>` : ""}
+        </p>
+      </div>
+    `;
+  })
+  .catch(err => {
+    console.error("Could not load latest publication", err);
+  });
+</script>
+
+---
+
+## Lecture notes
+
+- [Introduction à l'astrophysique](files/Teaching/Polycopie-L3-Astrophysique-2025.pdf) (L3 ENS) ![](images/fr.svg){width=20}
+- [Statistical physics](files/Teaching/Statistical-Physics-2025-2026.pdf) (M1 SUTS) ![](images/uk.svg){width=20}
+- [Milieu interstellaire et formation des étoiles](files/Teaching/T07-2025-2026-Complet.pdf) (M2 AADC) ![](images/fr.svg){width=20}
+- [Incertitudes expérimentales](files/Teaching/Incertitudes-2025-2026.pdf) (Préparation à l'agrégation de physique) ![](images/fr.svg){width=20}
+
+---
+
+<div id="apod"></div>
+
+<script>
+fetch("https://api.nasa.gov/planetary/apod?api_key=Ou5foa1QNKulBvRHkdQNLnTXz8pjwCcMP2de7ayf")
+.then(r => r.json())
+.then(d => {
+
+document.getElementById("apod").innerHTML = `
+<h3>Astronomy Picture of the Day: ${d.title}</h3>
+
+<div style="display:flex; gap:20px; align-items:flex-start;">
+
+  <img src="${d.url}" style="max-width:320px; height:auto;">
+
+  <div style="font-size:0.85em; line-height:1.4;">
+    ${d.explanation}
+  </div>
+
+</div>
+`;
+
+});
+</script>
+
+---
+
+<iframe src="https://calendar.google.com/calendar/embed?src=ZnJhbmNvaXMubGV2cmllckBnbWFpbC5jb20"
+style="border:0"
+width="600"
+height="400"
+frameborder="0"
+scrolling="no"></iframe>
+
+
+:::
+
+:::
+
+---
+
+<div id="quote"></div>
+
+<script src="quotes.js"></script>
