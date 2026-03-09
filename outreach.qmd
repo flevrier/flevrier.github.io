@@ -5,16 +5,10 @@ toc: true
 
 ## Public Lectures
 
-### The Turbulent Interstellar Medium  
-**Public lecture**, Observatoire de Paris — 2024  
+### La vie et la mort des étoiles  
+**Public lecture**, Association "Arc Patrimoine et Culture", Arc-en-Barrois, 2025
 
-📄 [Slides (PDF)](files/outreach/turbulent_ism_2024.pdf)
-
-Short description of the talk if you wish (optional).  
-For example: an introduction to the physics of the interstellar medium and how turbulence shapes star-forming clouds.
-
-
----
+📄 [Présentation](https://drive.google.com/file/d/1Pz_FnZ8bkDRNGj6E9uSc9iGoiwlj4qId/view?usp=sharing)
 
 ### Magnetic Fields in the Galaxy  
 **Public lecture**, Nuit de la Science — 2023  
