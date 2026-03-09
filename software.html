@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – François Levrier</title>
+<title>Software – François Levrier</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -111,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Outreach</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./software.html"> 
+    <a class="nav-link active" href="./software.html" aria-current="page"> 
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
@@ -129,15 +164,30 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#simpolar" id="toc-simpolar" class="nav-link active" data-scroll-target="#simpolar">SimPolar</a></li>
+  <li><a href="#s3-tools" id="toc-s3-tools" class="nav-link" data-scroll-target="#s3-tools">S3 Tools</a>
+  <ul class="collapse">
+  <li><a href="#features" id="toc-features" class="nav-link" data-scroll-target="#features">Features</a></li>
+  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
+  <li><a href="#requirements" id="toc-requirements" class="nav-link" data-scroll-target="#requirements">Requirements</a></li>
+  <li><a href="#installation" id="toc-installation" class="nav-link" data-scroll-target="#installation">Installation</a></li>
+  <li><a href="#configuration" id="toc-configuration" class="nav-link" data-scroll-target="#configuration">Configuration</a></li>
+  <li><a href="#simulation-templates" id="toc-simulation-templates" class="nav-link" data-scroll-target="#simulation-templates">Simulation Templates</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Software</h1>
 </div>
 
 
@@ -154,9 +204,164 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>About this site</p>
+<section id="simpolar" class="level2">
+<h2 class="anchored" data-anchor-id="simpolar">SimPolar</h2>
+<p>SimPolar is a set of routines to build simulated polarized thermal dust emission maps from MHD cubes, at any given frequency. They are available <a href="files/Software/SimPolar/Routines.zip">here</a> but do not come with documentation yet, so contact me if you need help.</p>
+<hr>
+</section>
+<section id="s3-tools" class="level2">
+<h2 class="anchored" data-anchor-id="s3-tools">S3 Tools</h2>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Warning to users
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>⚠️ This software was developed more than a decade ago for the <strong>SKA Simulated Skies (S3)</strong> simulations produced at the University of Oxford within the framework of the SKADS programme. The website hosting these simulations is no longer accessible, and this software is <strong>most likely obsolete</strong> and may not work with modern Python environments. It is kept here <strong>for archival purposes only</strong>.</p>
+</div>
+</div>
+<p>The <strong>S3 Tools</strong> are a set of Python routines designed to provide convenient access to the <strong>SKA Simulated Skies (S3)</strong> simulations. They allow users to transform query results from the S3 databases into <strong>maps and spectral data cubes</strong> for further analysis.</p>
+<section id="features" class="level3">
+<h3 class="anchored" data-anchor-id="features">Features</h3>
+<p>The S3 Tools allow users to:</p>
+<ul>
+<li>read results from S3 database queries</li>
+<li>generate simulated radio maps</li>
+<li>build spectral data cubes</li>
+<li>combine several astrophysical components (HI, CO, continuum, Galactic emission, etc.)</li>
+</ul>
+</section>
+<section id="documentation" class="level3">
+<h3 class="anchored" data-anchor-id="documentation">Documentation</h3>
+<ul>
+<li><a href="files/software/S3/S3Tools.pdf">User guide (PDF)</a></li>
+<li><a href="files/software/S3/README">README</a></li>
+</ul>
+</section>
+<section id="requirements" class="level3">
+<h3 class="anchored" data-anchor-id="requirements">Requirements</h3>
+<p>The software requires a standard scientific Python environment. Typical dependencies include:</p>
+<ul>
+<li><code>numpy</code></li>
+<li><code>scipy</code></li>
+<li><code>matplotlib</code></li>
+<li><code>pyfits</code></li>
+<li><code>PIL</code></li>
+<li><code>Tkinter</code></li>
+</ul>
+<p>Standard Python modules such as <code>os</code>, <code>sys</code>, <code>math</code>, <code>time</code>, and <code>random</code> are also used.</p>
+</section>
+<section id="installation" class="level3">
+<h3 class="anchored" data-anchor-id="installation">Installation</h3>
+<ol type="1">
+<li><p>Download the archive:</p>
+<ul>
+<li><a href="files/software/S3/S3Tools.tgz">S3Tools.tgz</a></li>
+</ul></li>
+<li><p>Uncompress the archive:</p></li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> xzf S3Tools.tgz</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ol start="3" type="1">
+<li>Run the installation script:</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> install.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The installation script checks the availability of the required Python packages and warns the user if some are missing.</p>
+</section>
+<section id="configuration" class="level3">
+<h3 class="anchored" data-anchor-id="configuration">Configuration</h3>
+<p>Assume the tools are installed in</p>
+<pre><code>~/S3Tools/</code></pre>
+<p>with the following structure:</p>
+<pre><code>S3Tools/
+  Config/
+  Doc/
+  Output/
+  Routines/
+  Tmp/</code></pre>
+<p>You should edit the file</p>
+<pre><code>Config/Config_Path.py</code></pre>
+<p>and set:</p>
+<pre><code>S3TOOLS_PATH = ~/S3Tools/</code></pre>
+</section>
+<section id="simulation-templates" class="level3">
+<h3 class="anchored" data-anchor-id="simulation-templates">Simulation Templates</h3>
+<p>Several astrophysical templates can be used with the S3 Tools.</p>
+<section id="hi-and-co-templates-oxford" class="level4">
+<h4 class="anchored" data-anchor-id="hi-and-co-templates-oxford">HI and CO templates (Oxford)</h4>
+<p>Templates for HI and CO emission of galaxies developed by <strong>Danail Obreschkow</strong>.</p>
+<p>Steps:</p>
+<ol type="1">
+<li>Download <a href="https://drive.google.com/open?id=0B2vciAlhwY9-R1FMc0dMTEJWN0k">SAX_templates.tgz</a></li>
+<li>Extract the archive</li>
+<li>Set</li>
+</ol>
+<pre><code>SAX_TEMPLATES_DIR</code></pre>
+<p>in <code>Config_Path.py</code>.</p>
+<p><em>If you have an older (predating March 2011) installation of these templates, you need to create a subdirectory named FITS/ into which FITS files for the templates will be placed. The original template files are ascii (under the ascii/ subdirectory) but they take a while to load into arrays, much longer than when read from FITS files. Consequently, when making SAX cubes, the script first looks for a FITS file, and uses that if it can find it. Otherwse, it uses the ascii file and takes the opportunity to convert it to FITS and save it under FITS/ for future use. The downside of that is that FITS files take up a much bigger disk space than ascii files.</em></p>
+</section>
+<section id="hi-templates-kapteyn-institute" class="level4">
+<h4 class="anchored" data-anchor-id="hi-templates-kapteyn-institute">HI templates (Kapteyn Institute)</h4>
+<p>HI galaxy templates developed by <strong>Rense Boomsma</strong>.</p>
+<p>Steps:</p>
+<ol type="1">
+<li>Download <a href="https://drive.google.com/open?id=0B2vciAlhwY9-M1VuUUxwRnZ3TlE">KI_templates.tgz</a></li>
+<li>Extract the archive</li>
+<li>Set</li>
+</ol>
+<pre><code>KAPTEYN_TEMPLATES_DIR</code></pre>
+<p>in <code>Config_Path.py</code>.</p>
+</section>
+<section id="continuum-templates-mpifr" class="level4">
+<h4 class="anchored" data-anchor-id="continuum-templates-mpifr">Continuum templates (MPIfR)</h4>
+<p>Templates for radio continuum emission in Stokes <strong>I, Q, U</strong> developed by <strong>Tigran Arshakian</strong>.</p>
+<p>Steps:</p>
+<ol type="1">
+<li>Download <a href="https://drive.google.com/file/d/1ZV99nLOlUUS0BtD8AWt-04NrIV8AGgUn">MPIFR.tgz</a></li>
+<li>Extract the archive</li>
+<li>Set</li>
+</ol>
+<pre><code>MPIFR_TEMPLATES_DIR</code></pre>
+<p>in <code>Config_Path.py</code>.</p>
+</section>
+<section id="global-sky-model" class="level4">
+<h4 class="anchored" data-anchor-id="global-sky-model">Global Sky Model</h4>
+<p>Galactic emission model based on the work of <strong>de Oliveira-Costa et al.&nbsp;(2008)</strong>. <br> <em>Note that this is now superseded by <a href="https://github.com/telegraphic/pygdsm">PyGDSM</a></em></p>
+<p>Steps:</p>
+<ol type="1">
+<li>Download the GSM package</li>
+<li>Extract it</li>
+<li>Set</li>
+</ol>
+<pre><code>GSM_DIR</code></pre>
+<p>in <code>Config_Path.py</code>.</p>
+<p>Then compile the provided <code>gsm.f</code> file.</p>
+</section>
+<section id="epoch-of-reionization-model" class="level4">
+<h4 class="anchored" data-anchor-id="epoch-of-reionization-model">Epoch of Reionization model</h4>
+<p>Simulations of the EoR signal produced by <strong>Mario Santos</strong>.</p>
+<p>Steps:</p>
+<ol type="1">
+<li>Download <a href="https://drive.google.com/open?id=0B2vciAlhwY9-WVI3SXMyOHF6cVU">EoR-Lisbon.tgz</a></li>
+<li>Extract it</li>
+<li>Set</li>
+</ol>
+<pre><code>IST_EOR_TEMPLATES_DIR</code></pre>
+<p>in <code>Config_Path.py</code>.</p>
+<!-- 
+### Notes
+
+A major bug affecting the line widths of SAX sources was corrected in March 2012.
+Users with older versions should rebuild their cubes using the updated version.
+ -->
 
 
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
