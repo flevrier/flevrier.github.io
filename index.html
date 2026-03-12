@@ -337,13 +337,13 @@ Astronomy Picture of the Day: ${d.title}
 </a>
 </h3>
 
-<div style="display:flex; gap:20px; align-items:flex-start;">
+<div style="display:flex; gap:20px; align-items:flex-start;flex-wrap:wrap;">
 
   <div>
     ${media}
   </div>
 
-  <div style="font-size:0.85em; line-height:1.4; max-width:600px;">
+  <div style="font-size:0.85em; line-height:1.4; max-width:600px; min-width:250px;">
     ${d.explanation}
 
     <p style="margin-top:10px; font-size:0.8em;">
@@ -356,7 +356,7 @@ Astronomy Picture of the Day: ${d.title}
 });
 </script>
 <hr>
-<iframe src="https://calendar.google.com/calendar/embed?src=ZnJhbmNvaXMubGV2cmllckBnbWFpbC5jb20" style="border:0" width="600" height="400" frameborder="0" scrolling="no">
+<iframe src="https://calendar.google.com/calendar/embed?src=ZnJhbmNvaXMubGV2cmllckBnbWFpbC5jb20" style="border:0;width:100%;max-width:600px;" height="400" frameborder="0" scrolling="no">
 </iframe>
 </section>
 </div>
