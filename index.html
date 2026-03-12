@@ -294,95 +294,79 @@ fetch("latest.json")
 
 </div>
 <script>
-fetch("https://apod.nasa.gov/apod/astropix.html")
-.then(r => r.text())
-.then(html => {
+fetch("https://api.nasa.gov/planetary/apod?thumbs=true&api_key=DEMO_KEY")
+.then(r => r.json())
+.then(d => {
 
-const parser = new DOMParser();
-const doc = parser.parseFromString(html, "text/html");
+const apodPage =
+  "https://apod.nasa.gov/apod/ap" +
+  d.date.replaceAll("-", "").slice(2) +
+  ".html";
 
-/* title */
-
-const title = doc.querySelector("b")?.textContent || "Astronomy Picture of the Day";
-
-/* image or video */
+const credit = d.copyright ? `Credit: ${d.copyright}` : "Credit: NASA / APOD";
 
 let media = "";
 
-const img = doc.querySelector("img");
-const iframe = doc.querySelector("iframe");
+/* IMAGE */
 
-if (img) {
-
-  const src = "https://apod.nasa.gov/apod/" + img.getAttribute("src");
+if (d.media_type === "image") {
 
   media = `
-  <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank">
-    <img src="${src}" style="max-width:320px;height:auto;">
+  <a href="${apodPage}" target="_blank">
+    <img src="${d.url}" style="max-width:320px;height:auto;">
   </a>
   `;
 
 }
 
-if (iframe) {
+/* VIDEO */
 
-  const src = iframe.getAttribute("src");
+else if (d.media_type === "video") {
 
-  media = `
-  <iframe
-    src="${src}"
-    width="320"
-    height="180"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
-  `;
+  const thumb = d.thumbnail_url || "";
+
+  if (thumb !== "") {
+
+    media = `
+    <a href="${d.url}" target="_blank">
+      <img src="${thumb}" style="max-width:320px;height:auto;">
+    </a>
+    `;
+
+  } else {
+
+    media = `
+    <iframe src="${d.url}" width="320" height="180"
+      frameborder="0" allowfullscreen>
+    </iframe>
+    `;
+  }
 
 }
 
-/* explanation */
-
-const paragraphs = doc.querySelectorAll("p");
-let explanation = "";
-
-paragraphs.forEach(p => {
-  if (p.textContent.includes("Explanation")) {
-    explanation = p.textContent.replace("Explanation:", "").trim();
-  }
-});
-
-/* credit */
-
-let credit = "";
-paragraphs.forEach(p => {
-  if (p.textContent.includes("Credit")) {
-    credit = p.textContent.trim();
-  }
-});
-
 document.getElementById("apod").innerHTML = `
 <h3>
-Astronomy Picture of the Day: ${title}
-<a href="https://apod.nasa.gov/apod/astropix.html" target="_blank" style="font-size:0.8em;"><br>
+Astronomy Picture of the Day: ${d.title}
+<a href="${apodPage}" target="_blank" style="font-size:0.8em;"><br>
 (view on APOD)
 </a>
 </h3>
 
 <div style="display:flex; gap:20px; align-items:flex-start;">
 
-  <div>${media}</div>
+<div>${media}</div>
 
-  <div style="font-size:0.85em; line-height:1.4; max-width:600px;">
-    ${explanation}
+<div style="font-size:0.85em; line-height:1.4; max-width:600px;">
+${d.explanation}
 
-    <p style="margin-top:10px; font-size:0.8em;">
-      ${credit}
-    </p>
-  </div>
+<p style="margin-top:10px; font-size:0.8em;">
+${credit}
+</p>
+
+</div>
 
 </div>
 `;
-
 });
 </script>
 <hr>
