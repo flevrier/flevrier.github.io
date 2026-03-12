@@ -294,7 +294,7 @@ fetch("latest.json")
 
 </div>
 <script>
-fetch("https://api.nasa.gov/planetary/apod?thumbs=true&api_key=DEMO_KEY")
+fetch("https://api.nasa.gov/planetary/apod?api_key=Ou5foa1QNKulBvRHkdQNLnTXz8pjwCcMP2de7ayf")
 .then(r => r.json())
 .then(d => {
 
@@ -305,65 +305,51 @@ const apodPage =
 
 const credit = d.copyright ? `Credit: ${d.copyright}` : "Credit: NASA / APOD";
 
-let media = "";
-
-/* IMAGE */
+let media;
 
 if (d.media_type === "image") {
 
   media = `
   <a href="${apodPage}" target="_blank">
-    <img src="${d.url}" style="max-width:320px;height:auto;">
+    <img src="${d.url}" style="max-width:320px; height:auto;">
   </a>
   `;
 
-}
+} else if (d.media_type === "video") {
 
-/* VIDEO */
-
-else if (d.media_type === "video") {
-
-  const thumb = d.thumbnail_url || "";
-
-  if (thumb !== "") {
-
-    media = `
-    <a href="${d.url}" target="_blank">
-      <img src="${thumb}" style="max-width:320px;height:auto;">
-    </a>
-    `;
-
-  } else {
-
-    media = `
-    <iframe src="${d.url}" width="320" height="180"
-      frameborder="0" allowfullscreen>
-    </iframe>
-    `;
-  }
+  media = `
+  <iframe
+    src="${d.url}"
+    width="320"
+    height="180"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+  `;
 
 }
 
 document.getElementById("apod").innerHTML = `
 <h3>
 Astronomy Picture of the Day: ${d.title}
-<a href="${apodPage}" target="_blank" style="font-size:0.8em;"><br>
+<a href="${apodPage}" target="_blank" style="font-size:0.8em;"><BR>
 (view on APOD)
 </a>
 </h3>
 
 <div style="display:flex; gap:20px; align-items:flex-start;">
 
-<div>${media}</div>
+  <div>
+    ${media}
+  </div>
 
-<div style="font-size:0.85em; line-height:1.4; max-width:600px;">
-${d.explanation}
+  <div style="font-size:0.85em; line-height:1.4; max-width:600px;">
+    ${d.explanation}
 
-<p style="margin-top:10px; font-size:0.8em;">
-${credit}
-</p>
-
-</div>
+    <p style="margin-top:10px; font-size:0.8em;">
+      ${credit}
+    </p>
+  </div>
 
 </div>
 `;
