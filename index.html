@@ -294,85 +294,92 @@ fetch("latest.json")
 
 </div>
 <script>
-fetch("https://api.nasa.gov/planetary/apod?api_key=Ou5foa1QNKulBvRHkdQNLnTXz8pjwCcMP2de7ayf&thumbs=true")
-.then(r => r.json())
+const url = "https://api.nasa.gov/planetary/apod?thumbs=true&api_key=Ou5foa1QNKulBvRHkdQNLnTXz8pjwCcMP2de7ayf";
+
+fetch(url)
+.then(response => {
+  if (!response.ok) {
+    throw new Error("APOD request failed");
+  }
+  return response.json();
+})
 .then(d => {
 
-const apodPage =
-  "https://apod.nasa.gov/apod/ap" +
-  (d.date || "").replaceAll("-", "").slice(2) +
-  ".html";
+  const apodPage =
+    "https://apod.nasa.gov/apod/ap" +
+    d.date.replaceAll("-", "").slice(2) +
+    ".html";
 
-const title = d.title || "Astronomy Picture of the Day";
-const explanation = d.explanation || "";
-const credit = d.copyright ? `Credit: ${d.copyright}` : "Credit: NASA / APOD";
+  const title = d.title ?? "Astronomy Picture of the Day";
+  const explanation = d.explanation ?? "";
+  const credit = d.copyright ? `Credit: ${d.copyright}` : "Credit: NASA / APOD";
 
-let media = "";
+  let media = "";
 
-/* IMAGE CASE */
+  /* IMAGE */
 
-if (d.media_type === "image") {
-
-  media = `
-  <a href="${apodPage}" target="_blank">
-    <img src="${d.url}" style="max-width:320px; height:auto;">
-  </a>
-  `;
-
-/* VIDEO CASE */
-
-} else if (d.media_type === "video") {
-
-  if (d.thumbnail_url) {
+  if (d.media_type === "image" && d.url) {
 
     media = `
-    <a href="${d.url}" target="_blank">
-      <img src="${d.thumbnail_url}" style="max-width:320px; height:auto;">
-    </a>
+      <a href="${apodPage}" target="_blank">
+        <img src="${d.url}" style="max-width:320px;height:auto;">
+      </a>
     `;
 
-  } else {
-
-    media = `
-    <iframe
-      src="${d.url}"
-      width="320"
-      height="180"
-      frameborder="0"
-      allowfullscreen>
-    </iframe>
-    `;
   }
 
-}
+  /* VIDEO */
 
-/* INSERT INTO PAGE */
+  else if (d.media_type === "video") {
 
-document.getElementById("apod").innerHTML = `
-<h3>
-Astronomy Picture of the Day: ${title}
-<a href="${apodPage}" target="_blank" style="font-size:0.8em;"><br>
-(view on APOD)
-</a>
-</h3>
+    if (d.thumbnail_url) {
 
-<div style="display:flex; gap:20px; align-items:flex-start;">
+      media = `
+        <a href="${d.url}" target="_blank">
+          <img src="${d.thumbnail_url}" style="max-width:320px;height:auto;">
+        </a>
+      `;
 
-  <div>
-    ${media}
+    } else {
+
+      media = `
+        <iframe
+          src="${d.url}"
+          width="320"
+          height="180"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      `;
+
+    }
+
+  }
+
+  document.getElementById("apod").innerHTML = `
+  <h3>
+  Astronomy Picture of the Day: ${title}
+  <a href="${apodPage}" target="_blank" style="font-size:0.8em;"><br>
+  (view on APOD)
+  </a>
+  </h3>
+
+  <div style="display:flex; gap:20px; align-items:flex-start;">
+
+    <div>${media}</div>
+
+    <div style="font-size:0.85em; line-height:1.4; max-width:600px;">
+      ${explanation}
+      <p style="margin-top:10px; font-size:0.8em;">${credit}</p>
+    </div>
+
   </div>
-
-  <div style="font-size:0.85em; line-height:1.4; max-width:600px;">
-    ${explanation}
-
-    <p style="margin-top:10px; font-size:0.8em;">
-      ${credit}
-    </p>
-  </div>
-
-</div>
-`;
-
+  `;
+})
+.catch(err => {
+  console.error(err);
+  document.getElementById("apod").innerHTML =
+    "<p>APOD temporarily unavailable.</p>";
 });
 </script>
 <hr>
