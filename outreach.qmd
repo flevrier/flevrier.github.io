@@ -3,75 +3,142 @@ title: "Outreach"
 toc: true
 ---
 
-## Public Lectures
-
-### La vie et la mort des étoiles  
-**Public lecture**, Association "Arc Patrimoine et Culture", Arc-en-Barrois, 2025
-
-📄 [Présentation](https://drive.google.com/file/d/1Pz_FnZ8bkDRNGj6E9uSc9iGoiwlj4qId/view?usp=sharing)
-
-### Magnetic Fields in the Galaxy  
-**Public lecture**, Nuit de la Science — 2023  
-
-📄 [Slides (PDF)](files/outreach/magnetic_fields_galaxy.pdf)
-
-A presentation on the role of magnetic fields in the structure and evolution of the interstellar medium.
-
----
-
-## Conferences for a General Audience
-
-### How Stars Are Born  
-**Public conference**, Université PSL — 2022  
-
-📄 [Slides (PDF)](files/outreach/star_formation_public.pdf)
-
-Overview of star formation processes in molecular clouds.
-
----
-
-### The Structure of the Interstellar Medium  
-**Seminar**, Science festival — 2021  
-
-📄 [Slides (PDF)](files/outreach/ism_structure_public.pdf)
-
----
-
-## Teaching / Pedagogical Presentations
-
-### Turbulence in Astrophysics  
-**Pedagogical lecture**, ENS — 2023  
-
-📄 [Slides (PDF)](files/outreach/turbulence_teaching.pdf)
-
----
-
-## Media and Public Engagement
-
-- Interview on interstellar turbulence — *Radio program*, 2023  
-- Public round table on astronomy — *Science Festival*, 2022
-
----
-
-## Notes
-
-Most slides are in **PDF format** and are intended for a **general audience**.  
-Some content may overlap with academic lectures or conference material.
-
-## Public Talks
-
-- **The Turbulent Interstellar Medium**  
-  Observatoire de Paris, 2024  
-  📄 [Slides](files/outreach/turbulent_ism_2024.pdf)
-
-- **Magnetic Fields in the Galaxy**  
-  Nuit de la Science, 2023  
-  📄 [Slides](files/outreach/magnetic_fields_galaxy.pdf)
-
-- **How Stars Are Born**  
-  Université PSL, 2022  
-  📄 [Slides](files/outreach/star_formation_public.pdf)
-
 ::: {.callout-note icon="megaphone"}
-These talks are intended for a **general audience** and require no prior background in astrophysics.
+These talks are intended either for a general audience, middle-school and high-school pupils, or for students at the L1-L3 level. Most of the presentations are in French.
 :::
+
+### Grand public
+**La vie et la mort des étoiles** 
+<BR>
+Association "Arc Patrimoine et Culture", Arc-en-Barrois, novembre 2025
+<BR>
+📄 [Keynote](https://drive.google.com/file/d/1Pz_FnZ8bkDRNGj6E9uSc9iGoiwlj4qId/view?usp=sharing)
+
+**L'énergie en astrophysique** 
+<BR>
+Fête de la science, octobre 2021
+<BR>
+📄 [Keynote](https://drive.google.com/file/d/1ade6yDtGI2nBqCkaBtmQB3ybEFsi6t3_/view?usp=sharing)
+
+**Le milieu interstellaire**
+<BR>
+Fête de la science, octobre 2018
+<BR>
+📄 [Keynote](https://drive.google.com/file/d/1EDMyjSydUlkbMsHaiUWmV1tKHddDps3t/view?usp=sharing)
+
+### Collège et lycée
+**De la Terre à l'Univers en ondes radio**
+<BR>
+&Eacute;lèves de troisième en stage au Département de Physique de l'ENS, mars 2026
+<BR>
+📄 [Keynote](https://drive.google.com/file/d/1ycf39-LBPcXlxki4f2htiylz3nfrsX8l/view?usp=sharing)
+
+**Mesurer l'Univers**
+<BR>
+&Eacute;lèves de seconde en stage au Département de Physique de l'ENS, juin 2025
+<BR>
+📄 [Keynote](https://drive.google.com/file/d/1p8oTcSkU9BcDD-hbPidrA8l9ikw8Q2aR/view?usp=sharing)
+
+**Un petit tour dans l'Univers**
+<BR>
+&Eacute;lèves de troisième en stage au Département de Physique de l'ENS, décembre 2024
+<BR>
+📄 [Keynote](https://drive.google.com/file/d/1TXd05ysYmM_AoGz0ZD8xJu08jYF2x8OB/view?usp=sharing)
+
+**Naissance des étoiles et des planètes**
+<BR>
+&Eacute;lèves de seconde en stage au Département de Physique de l'ENS, juin 2024
+<BR>
+📄 [Keynote](https://drive.google.com/file/d/1GxUXjglTF0cXAACEjifyvjlLb7olTODQ/view?usp=sharing)
+
+**Méthodes modernes en astronomie**
+<BR>
+Stage "Science Ouverte", février 2018
+<BR>
+📄 [Keynote](https://drive.google.com/file/d/1L1rZY0QV3tYS3m1NNL83U9kB6qLIjQv8/view?usp=sharing)
+
+### Licence et CPGE
+**De la physique interstellaire à la cosmologie, en passant par la science des données…**
+<BR>
+Lycée Saint-Louis, janvier 2025
+<BR>
+📄 [Keynote](https://drive.google.com/file/d/1wtM6mTst4ev9JnP2uOCxdlHcZMsSvEnS/view?usp=sharing)
+
+**Physique interstellaire, cosmologie, et science des données**
+<BR>
+Présentation de l'axe "Astrophysique et Cosmologie" aux nouveaux élèves de l'ENS, septembre 2024
+<BR>
+📄 [Keynote](https://drive.google.com/file/d/12Y4QGJJiraW0pE6VQLeAgFA0etRSUTOx/view?usp=sharing)
+
+**De l'écosystème Galactique à la cosmologie**
+<BR>
+Présentation de l'axe "Astrophysique et Cosmologie" aux nouveaux élèves de l'ENS, septembre 2022
+<BR>
+📄 [Keynote](https://drive.google.com/file/d/1692s9UVLaEjcRGhWWAOTCv6_VXh_NR3R/view?usp=sharing)
+
+**La vie et la mort des étoiles**
+<BR>
+Lycée Saint-Louis, mars 2022
+<BR>
+📄 [Keynote](https://drive.google.com/file/d/11GYC0xFCwfoYOs0EEnQ8CKU6kGVk9C3d/view?usp=sharing)
+
+**Le milieu interstellaire, écosystème de la Galaxie**
+<BR>
+Présentation de l'équipe "Astrophysique" aux nouveaux élèves de l'ENS, septembre 2021
+<BR>
+📄 [Keynote](https://drive.google.com/file/d/1GqLhYejqHqKBU0mxgTI4TwCkGDK9a9k0/view?usp=sharing)
+
+**La physico-chimie d'un nuage moléculaire géant**
+<BR>
+Séminaire destiné aux élèves de première année de l'ENS, mai 2020
+<BR>
+📄 [Keynote](https://drive.google.com/file/d/1h7Kro634Qk9RgeelJbaFtceUo6IF9dtt/view?usp=sharing)
+
+**Le milieu interstellaire**
+<BR>
+Présentation à des élèves de CPGE à l'ENS, mars 2019
+<BR>
+📄 [Keynote](https://drive.google.com/file/d/1ObYVL1CYBp2b7rmm5rIpHqeH9uyUsXnE/view?usp=sharing)
+
+**Le milieu interstellaire, écosystème de la Galaxie**
+<BR>
+Présentation de l'équipe "Astrophysique" aux nouveaux élèves de l'ENS, septembre 2018
+<BR>
+📄 [Keynote](https://drive.google.com/file/d/1cNfjqauP3mdAtsnXvhf6WY0IhgPzxrex/view?usp=sharing)
+
+**La vie et la mort des étoiles**
+<BR>
+Lycée Pierre de Fermat, mars 2017
+<BR>
+📄 [Keynote](https://drive.google.com/file/d/1jAHxT1ifiebUm0gN7rA2cJ62rJvPV3hf/view?usp=sharing)
+
+**Le milieu interstellaire, écosystème de la Galaxie**
+<BR>
+Lycée Buffon, décembre 2016
+<BR>
+📄 [Keynote](https://drive.google.com/file/d/1a2enEmwdJILbXj2GOs6crmoZCVU4IRwe/view?usp=sharing)
+
+**The large ground-based instruments for 21st century radio-interferometry** ![](images/uk.svg){width=20}
+<BR>
+Séminaire destiné aux élèves de première année de l'ENS, novembre 2015
+<BR>
+📄 [Keynote](https://drive.google.com/file/d/1pVT4wCYcfDrZ0HoBTqr4BxlgW6mwDCKT/view?usp=sharing)
+
+**Millimeter interferometry for the next decade : The ALMA project** ![](images/uk.svg){width=20}
+<BR>
+Séminaire destiné aux élèves de première année de l'ENS, mars 2009
+<BR>
+📄 [PDF](https://drive.google.com/file/d/1Evs0d46-5A7_4-zK_yrVrDiJdYwu8BF_/view?usp=sharing)
+
+### Enseignants
+**La formation des étoiles**
+<BR>
+Journée de formation des enseignants et enseignantes pour l'année de la Physique, janvier 2024
+<BR>
+📄 [Powerpoint](https://docs.google.com/presentation/d/1ybiCb_xUQf9ibZF6bmrEQeND33FWT7Lj/edit?usp=sharing&ouid=116153534221528171846&rtpof=true&sd=true)
+
+**Paysages de l'astrophysique Galactique**
+<BR>
+Journée de formation des enseignants et enseignantes pour l'année de la Physique, novembre 2023
+<BR>
+📄 [Keynote](https://drive.google.com/file/d/1YWFp6lt-SmJUOk7F9pRix1I8rrS27lmm/view?usp=sharing)
