@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://flevrier.github.io/software.html</loc>
-    <lastmod>2026-09-04T07:37:27.719Z</lastmod>
-  </url>
-  <url>
-    <loc>https://flevrier.github.io/teaching.html</loc>
-    <lastmod>2026-09-04T07:37:27.719Z</lastmod>
-  </url>
-  <url>
-    <loc>https://flevrier.github.io/students.html</loc>
-    <lastmod>2026-09-04T07:37:27.719Z</lastmod>
+    <loc>https://flevrier.github.io/about.html</loc>
+    <lastmod>2026-09-05T07:18:17.236Z</lastmod>
   </url>
   <url>
     <loc>https://flevrier.github.io/cv.html</loc>
-    <lastmod>2026-09-04T07:37:27.224Z</lastmod>
+    <lastmod>2026-09-05T07:18:17.236Z</lastmod>
   </url>
   <url>
     <loc>https://flevrier.github.io/outreach.html</loc>
-    <lastmod>2026-09-04T07:37:27.717Z</lastmod>
-  </url>
-  <url>
-    <loc>https://flevrier.github.io/about.html</loc>
-    <lastmod>2026-09-04T07:37:27.224Z</lastmod>
-  </url>
-  <url>
-    <loc>https://flevrier.github.io/index.html</loc>
-    <lastmod>2026-09-04T07:37:27.717Z</lastmod>
+    <lastmod>2026-09-05T07:18:17.725Z</lastmod>
   </url>
   <url>
     <loc>https://flevrier.github.io/publications.html</loc>
-    <lastmod>2026-09-04T07:37:27.718Z</lastmod>
+    <lastmod>2026-09-05T07:18:17.726Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flevrier.github.io/index.html</loc>
+    <lastmod>2026-09-05T07:18:17.725Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flevrier.github.io/teaching.html</loc>
+    <lastmod>2026-09-05T07:18:17.727Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flevrier.github.io/software.html</loc>
+    <lastmod>2026-09-05T07:18:17.727Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flevrier.github.io/students.html</loc>
+    <lastmod>2026-09-05T07:18:17.727Z</lastmod>
   </url>
 </urlset>
