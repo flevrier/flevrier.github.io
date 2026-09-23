@@ -110,7 +110,7 @@ I am a professor of astrophysics in the [Physics Department](https://www.phys.en
 
 My research focuses on the structure and dynamics of the interstellar medium, from the diffuse regions to dense molecular clouds where stars are born, using methods imported from data science at the interface between observations and simulations. 
 
-Together with [Aude Simon](https://www.lcpq.ups-tlse.fr/spip.php?article1130) I coordinate the "Action Thématique" [PCMI](https://www.pcmi.cnrs.fr/) ("Physique et Chimie du Milieu Interstellaire") of [CNRS](https://www.cnrs.fr/fr) ["Terre & Univers"](https://www.insu.cnrs.fr/fr).
+I coordinate the "Action Thématique" [PCMI](https://www.pcmi.cnrs.fr/) ("Physique et Chimie du Milieu Interstellaire") of [CNRS](https://www.cnrs.fr/fr) ["Terre & Univers"](https://www.insu.cnrs.fr/fr).
 
 I teach at various levels, from L3 to M2, from general physics to my field of expertise, and I am co-head of the [Master AADC](https://ufe.obspm.fr/formations/master/master-2-suts-parcours-aadc/).
 
