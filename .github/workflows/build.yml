@@ -17,10 +17,12 @@ jobs:
       - uses: quarto-dev/quarto-actions/setup@v2
 
       - name: install python deps
-        run: pip install requests "bibtexparser<2" pylatexenc
+        run: pip install requests
 
       - name: generate latest publication json
-        run: python scripts/latest_from_bib.py
+        run: python scripts/fetch_latest_ads.py
+        env:
+          ADS_TOKEN: ${{ secrets.ADS_TOKEN }}
 
       - name: render site
         run: quarto render
