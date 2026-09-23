@@ -13,17 +13,17 @@ if not TOKEN:
     print("ADS_TOKEN is not set", file=sys.stderr)
     sys.exit(1)
 
-query = {
+params = {
     "q": 'author:"Levrier, F"',
     "fl": "title,author,year,abstract,bibcode,identifier",
     "rows": 1,
     "sort": "date desc",
 }
 
-r = requests.post(
+r = requests.get(
     "https://api.adsabs.harvard.edu/v1/search/query",
     headers={"Authorization": f"Bearer {TOKEN}"},
-    json=query,
+    params=params,
     timeout=30,
 )
 r.raise_for_status()
@@ -35,14 +35,12 @@ if not docs:
 
 doc = docs[0]
 
-# auteurs : decode + et al. si > 3 (meme convention que l'ancien script)
 author_list = doc.get("author", [])
 if len(author_list) > 3:
     authors = ", ".join(author_list[:3]) + " et al."
 else:
     authors = ", ".join(author_list)
 
-# lien arXiv (page abstract, comme l'ancien script)
 arxiv = ""
 for ident in doc.get("identifier", []):
     if ident.startswith("arXiv:"):
