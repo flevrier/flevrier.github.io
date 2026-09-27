@@ -147,7 +147,7 @@ fetch("latest.json")
 - [Introduction à l'astrophysique](files/Teaching/Polycopie-L3-Astrophysique-2025.pdf) (L3 ENS) ![](images/fr.svg){width=20}
 - [Statistical physics](files/Teaching/Statistical-Physics-2026-2027.pdf) (M1 SUTS) ![](images/uk.svg){width=20}
 - [Milieu interstellaire et formation des étoiles](files/Teaching/T07-2025-2026-Complet.pdf) (M2 AADC) ![](images/fr.svg){width=20}
-- [Incertitudes expérimentales](files/Teaching/Incertitudes-2025-2026.pdf) (Préparation à l'agrégation de physique) ![](images/fr.svg){width=20}
+- [Incertitudes expérimentales](files/Teaching/Incertitudes-2026-2027.pdf) (Préparation à l'agrégation de physique) ![](images/fr.svg){width=20}
 
 ---
 
